@@ -4,10 +4,10 @@
 
 <div align="center">
 
-<img src="./assets/banner.svg" width="100%" alt="mixiboo, 최민준의 작은 은하수" />
+<img src="./assets/banner.svg" width="100%" alt="mixiboo, 민준의 작은 은하수" />
 
 <!-- 한 글자씩 써지는 문장: https://readme-typing-svg.demolab.com/demo/ 에서 문장을 넣고 만든 주소로 바꾸면 돼요 (한글은 꼭 인코딩된 주소로!) -->
-<a href="https://github.com/mixiboo"><img src="https://readme-typing-svg.demolab.com?font=Jua&size=26&duration=2800&pause=900&color=8B5CF6&center=true&vCenter=true&width=620&height=50&lines=%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94!+%EC%B5%9C%EB%AF%BC%EC%A4%80%EC%9D%B4%EC%97%90%EC%9A%94+%F0%9F%91%8B;%EA%B2%8C%EC%9E%84+%EC%B5%9C%EC%A0%81%ED%99%94+%EC%95%B1+GameBoost%EB%A5%BC+%EB%A7%8C%EB%93%A4%EC%96%B4%EC%9A%94;%EB%AF%B8%EB%A6%AC%EB%82%B4+%ED%81%AC%EB%A3%A8+%EC%95%B1%EB%8F%84+%EC%A7%81%EC%A0%91+%EB%A7%8C%EB%93%A4%EC%96%B4%EC%9A%94;%EB%94%94%EC%8A%A4%EC%BD%94%EB%93%9C+%EB%B4%87+%EB%A7%8C%EB%93%9C%EB%8A%94+%EA%B2%83%EB%8F%84+%EC%A2%8B%EC%95%84%ED%95%B4%EC%9A%94" alt="안녕하세요! 최민준이에요" /></a>
+<a href="https://github.com/mixiboo"><img src="https://readme-typing-svg.demolab.com?font=Jua&size=26&duration=2800&pause=900&color=8B5CF6&center=true&vCenter=true&width=620&height=50&lines=%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94!+%EB%AF%BC%EC%A4%80%EC%9D%B4%EC%97%90%EC%9A%94+%F0%9F%91%8B;%EA%B2%8C%EC%9E%84+%EC%B5%9C%EC%A0%81%ED%99%94+%EC%95%B1+GameBoost%EB%A5%BC+%EB%A7%8C%EB%93%A4%EC%96%B4%EC%9A%94;%EB%AF%B8%EB%A6%AC%EB%82%B4+%ED%81%AC%EB%A3%A8+%EC%95%B1%EB%8F%84+%EC%A7%81%EC%A0%91+%EB%A7%8C%EB%93%A4%EC%96%B4%EC%9A%94;%EB%94%94%EC%8A%A4%EC%BD%94%EB%93%9C+%EB%B4%87+%EB%A7%8C%EB%93%9C%EB%8A%94+%EA%B2%83%EB%8F%84+%EC%A2%8B%EC%95%84%ED%95%B4%EC%9A%94" alt="안녕하세요! 민준이에요" /></a>
 
 </div>
 

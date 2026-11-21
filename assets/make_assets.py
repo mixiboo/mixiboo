@@ -25,7 +25,7 @@ from fontTools.ttLib import TTFont
 OUT = sys.argv[1] if len(sys.argv) > 1 else "."
 
 TITLE = "mixiboo"
-SUBTITLE = "최민준의 작은 은하수"
+SUBTITLE = "민준의 작은 은하수"
 FOOTER_TEXT = "들러줘서 고마워요"
 
 
