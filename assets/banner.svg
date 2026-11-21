@@ -1,0 +1,403 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-labelledby="title desc">
+  <title id="title">mixiboo</title>
+  <desc id="desc">최민준의 작은 은하수</desc>
+  <defs>
+    <style>
+    .tw { animation: twinkle 3.6s ease-in-out infinite; }
+    @keyframes twinkle { 0%, 100% { opacity: .25; } 50% { opacity: 1; } }
+    .sp { transform-box: fill-box; transform-origin: center; animation: sparkle 4.2s ease-in-out infinite; }
+    @keyframes sparkle {
+      0%, 100% { transform: scale(.55) rotate(0deg); opacity: .55; }
+      50% { transform: scale(1.1) rotate(45deg); opacity: 1; }
+    }
+    .shoot { opacity: 0; animation: shoot 9s linear infinite; }
+    @keyframes shoot {
+      0% { transform: translate(0, 0); opacity: 0; }
+      2% { opacity: 1; }
+      13% { transform: translate(-440px, 220px); opacity: 0; }
+      100% { transform: translate(-440px, 220px); opacity: 0; }
+    }
+    .rise { animation: rise 1.4s cubic-bezier(.2, .8, .2, 1) both; }
+    .rise2 { animation: rise 1.4s cubic-bezier(.2, .8, .2, 1) .35s both; }
+    @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+    .glow { animation: breathe 5s ease-in-out infinite; }
+    @keyframes breathe { 0%, 100% { opacity: .55; } 50% { opacity: .9; } }
+    @media (prefers-reduced-motion: reduce) {
+      .tw, .sp, .shoot, .rise, .rise2, .glow { animation: none; }
+      .shoot { display: none; }
+    }
+</style>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A0A1F"/>
+      <stop offset=".5" stop-color="#1C1650"/>
+      <stop offset="1" stop-color="#3B1C72"/>
+    </linearGradient>
+    <radialGradient id="nebula" cx=".82" cy=".9" r=".55">
+      <stop offset="0" stop-color="#C026D3" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#C026D3" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="nebula2" cx=".12" cy=".15" r=".45">
+      <stop offset="0" stop-color="#4F46E5" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#4F46E5" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="titleFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E9D5FF"/>
+    </linearGradient>
+    <filter id="band" x="-20%" y="-200%" width="140%" height="500%"><feGaussianBlur stdDeviation="26"/></filter>
+    <filter id="soft" x="-30%" y="-60%" width="160%" height="220%"><feGaussianBlur stdDeviation="12"/></filter>
+    <clipPath id="frame"><path d="M0 20 Q0 0 20 0 H1180 Q1200 0 1200 20 V250 C1080 302 960 214 800 246 C640 278 520 214 360 244 C220 270 100 258 0 236 Z"/></clipPath>
+    <linearGradient id="tail1" gradientUnits="userSpaceOnUse" x1="1090.0" y1="24.0" x2="955.8" y2="91.1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+    <linearGradient id="tail2" gradientUnits="userSpaceOnUse" x1="760.0" y1="6.0" x2="652.7" y2="59.7"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="300" fill="url(#sky)"/>
+    <rect width="1200" height="300" fill="url(#nebula)"/>
+    <rect width="1200" height="300" fill="url(#nebula2)"/>
+    <g filter="url(#band)" transform="rotate(-9 600 150)">
+      <ellipse cx="600" cy="150" rx="700" ry="46" fill="#6D28D9" opacity=".55"/>
+      <ellipse cx="520" cy="146" rx="420" ry="24" fill="#A855F7" opacity=".5"/>
+      <ellipse cx="780" cy="158" rx="280" ry="16" fill="#F0ABFC" opacity=".35"/>
+    </g>
+    <circle cx="1145.5" cy="77.5" r="0.69" fill="#F3E8FF" opacity="0.44"/>
+    <circle cx="-11.8" cy="265.4" r="0.45" fill="#F3E8FF" opacity="0.45"/>
+    <circle cx="188.4" cy="191.3" r="0.54" fill="#F3E8FF" opacity="0.75"/>
+    <circle cx="281.3" cy="184.0" r="0.85" fill="#F3E8FF" opacity="0.51"/>
+    <circle cx="391.8" cy="215.1" r="0.55" fill="#F3E8FF" opacity="0.75"/>
+    <circle cx="629.2" cy="167.2" r="0.82" fill="#F3E8FF" opacity="0.60"/>
+    <circle cx="13.1" cy="252.2" r="0.42" fill="#F3E8FF" opacity="0.59"/>
+    <circle cx="1024.2" cy="119.3" r="0.55" fill="#F3E8FF" opacity="0.46"/>
+    <circle cx="511.4" cy="115.9" r="0.59" fill="#F3E8FF" opacity="0.54"/>
+    <circle cx="247.7" cy="176.6" r="0.73" fill="#F3E8FF" opacity="0.38"/>
+    <circle cx="556.3" cy="130.7" r="0.60" fill="#F3E8FF" opacity="0.72"/>
+    <circle cx="599.0" cy="145.7" r="0.76" fill="#F3E8FF" opacity="0.70"/>
+    <circle cx="836.6" cy="90.9" r="0.90" fill="#F3E8FF" opacity="0.79"/>
+    <circle cx="101.8" cy="244.7" r="0.87" fill="#F3E8FF" opacity="0.76"/>
+    <circle cx="304.8" cy="172.7" r="0.79" fill="#F3E8FF" opacity="0.42"/>
+    <circle cx="16.1" cy="227.6" r="0.86" fill="#F3E8FF" opacity="0.75"/>
+    <circle cx="147.7" cy="222.2" r="0.66" fill="#F3E8FF" opacity="0.54"/>
+    <circle cx="826.6" cy="81.1" r="0.64" fill="#F3E8FF" opacity="0.51"/>
+    <circle cx="1012.0" cy="122.8" r="0.39" fill="#F3E8FF" opacity="0.42"/>
+    <circle cx="906.1" cy="129.3" r="0.49" fill="#F3E8FF" opacity="0.26"/>
+    <circle cx="28.5" cy="224.4" r="0.69" fill="#F3E8FF" opacity="0.74"/>
+    <circle cx="1077.8" cy="67.5" r="0.79" fill="#F3E8FF" opacity="0.74"/>
+    <circle cx="683.0" cy="169.3" r="0.68" fill="#F3E8FF" opacity="0.64"/>
+    <circle cx="823.7" cy="143.6" r="0.72" fill="#F3E8FF" opacity="0.80"/>
+    <circle cx="352.5" cy="170.7" r="0.87" fill="#F3E8FF" opacity="0.28"/>
+    <circle cx="843.6" cy="87.2" r="0.70" fill="#F3E8FF" opacity="0.63"/>
+    <circle cx="43.6" cy="227.5" r="0.46" fill="#F3E8FF" opacity="0.69"/>
+    <circle cx="249.0" cy="202.3" r="0.71" fill="#F3E8FF" opacity="0.53"/>
+    <circle cx="658.6" cy="169.9" r="0.50" fill="#F3E8FF" opacity="0.79"/>
+    <circle cx="636.2" cy="193.2" r="0.77" fill="#F3E8FF" opacity="0.67"/>
+    <circle cx="116.7" cy="189.6" r="0.61" fill="#F3E8FF" opacity="0.72"/>
+    <circle cx="312.4" cy="181.1" r="0.52" fill="#F3E8FF" opacity="0.55"/>
+    <circle cx="640.7" cy="166.6" r="0.88" fill="#F3E8FF" opacity="0.48"/>
+    <circle cx="1059.0" cy="39.6" r="0.70" fill="#F3E8FF" opacity="0.79"/>
+    <circle cx="265.6" cy="186.5" r="0.89" fill="#F3E8FF" opacity="0.69"/>
+    <circle cx="256.7" cy="195.5" r="0.53" fill="#F3E8FF" opacity="0.36"/>
+    <circle cx="913.7" cy="107.4" r="0.37" fill="#F3E8FF" opacity="0.53"/>
+    <circle cx="924.1" cy="93.1" r="0.59" fill="#F3E8FF" opacity="0.53"/>
+    <circle cx="436.9" cy="156.7" r="0.86" fill="#F3E8FF" opacity="0.55"/>
+    <circle cx="946.1" cy="85.9" r="0.47" fill="#F3E8FF" opacity="0.74"/>
+    <circle cx="371.1" cy="174.6" r="0.65" fill="#F3E8FF" opacity="0.49"/>
+    <circle cx="563.4" cy="190.1" r="0.50" fill="#F3E8FF" opacity="0.76"/>
+    <circle cx="718.7" cy="119.9" r="0.55" fill="#F3E8FF" opacity="0.32"/>
+    <circle cx="744.6" cy="133.9" r="0.80" fill="#F3E8FF" opacity="0.33"/>
+    <circle cx="1003.0" cy="113.4" r="0.48" fill="#F3E8FF" opacity="0.53"/>
+    <circle cx="109.3" cy="227.7" r="0.74" fill="#F3E8FF" opacity="0.41"/>
+    <circle cx="1050.6" cy="110.8" r="0.51" fill="#F3E8FF" opacity="0.80"/>
+    <circle cx="49.4" cy="259.2" r="0.65" fill="#F3E8FF" opacity="0.39"/>
+    <circle cx="343.2" cy="190.8" r="0.69" fill="#F3E8FF" opacity="0.47"/>
+    <circle cx="935.9" cy="128.5" r="0.67" fill="#F3E8FF" opacity="0.71"/>
+    <circle cx="418.8" cy="199.3" r="0.53" fill="#F3E8FF" opacity="0.78"/>
+    <circle cx="371.8" cy="236.5" r="0.78" fill="#F3E8FF" opacity="0.36"/>
+    <circle cx="339.7" cy="187.8" r="0.48" fill="#F3E8FF" opacity="0.31"/>
+    <circle cx="760.4" cy="125.0" r="0.60" fill="#F3E8FF" opacity="0.44"/>
+    <circle cx="226.9" cy="236.6" r="0.76" fill="#F3E8FF" opacity="0.41"/>
+    <circle cx="456.4" cy="143.3" r="0.39" fill="#F3E8FF" opacity="0.50"/>
+    <circle cx="163.2" cy="231.5" r="0.57" fill="#F3E8FF" opacity="0.66"/>
+    <circle cx="1035.8" cy="83.5" r="0.82" fill="#F3E8FF" opacity="0.69"/>
+    <circle cx="580.7" cy="170.3" r="0.48" fill="#F3E8FF" opacity="0.71"/>
+    <circle cx="887.1" cy="89.6" r="0.50" fill="#F3E8FF" opacity="0.41"/>
+    <circle cx="1203.6" cy="37.1" r="0.43" fill="#F3E8FF" opacity="0.49"/>
+    <circle cx="616.3" cy="165.3" r="0.45" fill="#F3E8FF" opacity="0.27"/>
+    <circle cx="757.2" cy="130.1" r="0.85" fill="#F3E8FF" opacity="0.69"/>
+    <circle cx="477.0" cy="166.8" r="0.44" fill="#F3E8FF" opacity="0.43"/>
+    <circle cx="30.0" cy="240.6" r="0.49" fill="#F3E8FF" opacity="0.50"/>
+    <circle cx="190.5" cy="180.1" r="0.68" fill="#F3E8FF" opacity="0.30"/>
+    <circle cx="390.1" cy="158.9" r="0.74" fill="#F3E8FF" opacity="0.41"/>
+    <circle cx="741.6" cy="114.5" r="0.45" fill="#F3E8FF" opacity="0.32"/>
+    <circle cx="664.4" cy="126.9" r="0.60" fill="#F3E8FF" opacity="0.33"/>
+    <circle cx="774.6" cy="150.1" r="0.89" fill="#F3E8FF" opacity="0.50"/>
+    <circle cx="2.6" cy="263.8" r="0.59" fill="#F3E8FF" opacity="0.38"/>
+    <circle cx="-17.9" cy="250.1" r="0.44" fill="#F3E8FF" opacity="0.53"/>
+    <circle cx="18.6" cy="246.6" r="0.85" fill="#F3E8FF" opacity="0.78"/>
+    <circle cx="270.3" cy="198.7" r="0.36" fill="#F3E8FF" opacity="0.30"/>
+    <circle cx="1109.5" cy="59.1" r="0.66" fill="#F3E8FF" opacity="0.57"/>
+    <circle cx="587.0" cy="138.0" r="0.43" fill="#F3E8FF" opacity="0.50"/>
+    <circle cx="123.0" cy="226.0" r="0.63" fill="#F3E8FF" opacity="0.72"/>
+    <circle cx="947.0" cy="66.0" r="0.47" fill="#F3E8FF" opacity="0.33"/>
+    <circle cx="313.2" cy="175.0" r="0.79" fill="#F3E8FF" opacity="0.56"/>
+    <circle cx="5.4" cy="249.9" r="0.81" fill="#F3E8FF" opacity="0.42"/>
+    <circle cx="287.2" cy="198.4" r="0.48" fill="#F3E8FF" opacity="0.58"/>
+    <circle cx="579.9" cy="122.5" r="0.64" fill="#F3E8FF" opacity="0.36"/>
+    <circle cx="1.8" cy="233.7" r="0.60" fill="#F3E8FF" opacity="0.64"/>
+    <circle cx="284.1" cy="224.2" r="0.35" fill="#F3E8FF" opacity="0.43"/>
+    <circle cx="143.4" cy="215.0" r="0.38" fill="#F3E8FF" opacity="0.60"/>
+    <circle cx="35.6" cy="226.7" r="0.86" fill="#F3E8FF" opacity="0.57"/>
+    <circle cx="11.3" cy="241.0" r="0.52" fill="#F3E8FF" opacity="0.59"/>
+    <circle cx="1012.5" cy="59.5" r="0.57" fill="#F3E8FF" opacity="0.47"/>
+    <circle cx="970.0" cy="101.3" r="0.78" fill="#F3E8FF" opacity="0.68"/>
+    <circle cx="8.9" cy="213.9" r="0.42" fill="#F3E8FF" opacity="0.27"/>
+    <circle cx="666.2" cy="104.3" r="0.43" fill="#F3E8FF" opacity="0.69"/>
+    <circle cx="289.0" cy="204.6" r="0.52" fill="#F3E8FF" opacity="0.68"/>
+    <circle cx="480.1" cy="144.1" r="0.84" fill="#F3E8FF" opacity="0.54"/>
+    <circle cx="580.2" cy="128.1" r="0.77" fill="#F3E8FF" opacity="0.71"/>
+    <circle cx="480.7" cy="172.0" r="0.60" fill="#F3E8FF" opacity="0.41"/>
+    <circle cx="896.1" cy="93.1" r="0.74" fill="#F3E8FF" opacity="0.54"/>
+    <circle cx="280.3" cy="236.1" r="0.57" fill="#F3E8FF" opacity="0.47"/>
+    <circle cx="411.2" cy="180.9" r="0.90" fill="#F3E8FF" opacity="0.46"/>
+    <circle cx="1071.6" cy="48.2" r="0.76" fill="#F3E8FF" opacity="0.39"/>
+    <circle cx="575.7" cy="206.3" r="0.71" fill="#F3E8FF" opacity="0.32"/>
+    <circle cx="159.5" cy="200.3" r="0.63" fill="#F3E8FF" opacity="0.45"/>
+    <circle cx="774.2" cy="111.5" r="0.50" fill="#F3E8FF" opacity="0.50"/>
+    <circle cx="690.6" cy="132.3" r="0.62" fill="#F3E8FF" opacity="0.41"/>
+    <circle cx="685.9" cy="158.8" r="0.39" fill="#F3E8FF" opacity="0.50"/>
+    <circle cx="846.9" cy="126.4" r="0.37" fill="#F3E8FF" opacity="0.65"/>
+    <circle cx="884.0" cy="95.3" r="0.90" fill="#F3E8FF" opacity="0.61"/>
+    <circle cx="428.4" cy="191.2" r="0.76" fill="#F3E8FF" opacity="0.71"/>
+    <circle cx="383.7" cy="144.4" r="0.89" fill="#F3E8FF" opacity="0.64"/>
+    <circle cx="503.7" cy="171.4" r="0.37" fill="#F3E8FF" opacity="0.72"/>
+    <circle cx="769.5" cy="118.0" r="0.42" fill="#F3E8FF" opacity="0.73"/>
+    <circle cx="644.0" cy="160.2" r="0.57" fill="#F3E8FF" opacity="0.40"/>
+    <circle cx="742.8" cy="112.4" r="0.87" fill="#F3E8FF" opacity="0.78"/>
+    <circle cx="600.6" cy="78.7" r="0.68" fill="#F3E8FF" opacity="0.46"/>
+    <circle cx="839.1" cy="105.1" r="0.71" fill="#F3E8FF" opacity="0.73"/>
+    <circle cx="1180.7" cy="20.8" r="0.52" fill="#F3E8FF" opacity="0.79"/>
+    <circle cx="1118.4" cy="40.2" r="0.77" fill="#F3E8FF" opacity="0.31"/>
+    <circle cx="859.1" cy="94.0" r="0.64" fill="#F3E8FF" opacity="0.59"/>
+    <circle cx="393.9" cy="202.9" r="0.67" fill="#F3E8FF" opacity="0.74"/>
+    <circle cx="1121.6" cy="89.4" r="0.67" fill="#F3E8FF" opacity="0.77"/>
+    <circle cx="1153.5" cy="56.4" r="0.67" fill="#F3E8FF" opacity="0.58"/>
+    <circle cx="60.0" cy="283.3" r="0.80" fill="#F3E8FF" opacity="0.69"/>
+    <circle cx="248.9" cy="185.3" r="0.42" fill="#F3E8FF" opacity="0.64"/>
+    <circle cx="932.9" cy="80.4" r="0.87" fill="#F3E8FF" opacity="0.77"/>
+    <circle cx="884.2" cy="130.9" r="0.38" fill="#F3E8FF" opacity="0.41"/>
+    <circle cx="388.6" cy="203.4" r="0.63" fill="#F3E8FF" opacity="0.52"/>
+    <circle cx="586.7" cy="137.5" r="0.69" fill="#F3E8FF" opacity="0.71"/>
+    <circle cx="764.8" cy="123.0" r="0.36" fill="#F3E8FF" opacity="0.37"/>
+    <circle cx="455.1" cy="191.2" r="0.52" fill="#F3E8FF" opacity="0.76"/>
+    <circle cx="436.5" cy="143.4" r="0.64" fill="#F3E8FF" opacity="0.72"/>
+    <circle cx="848.8" cy="133.7" r="0.84" fill="#F3E8FF" opacity="0.65"/>
+    <circle cx="1033.4" cy="88.7" r="0.69" fill="#F3E8FF" opacity="0.65"/>
+    <circle cx="263.4" cy="176.8" r="0.81" fill="#F3E8FF" opacity="0.73"/>
+    <circle cx="1192.2" cy="48.6" r="0.63" fill="#F3E8FF" opacity="0.34"/>
+    <circle cx="-2.6" cy="226.2" r="0.88" fill="#F3E8FF" opacity="0.62"/>
+    <circle cx="1186.1" cy="26.7" r="0.89" fill="#F3E8FF" opacity="0.79"/>
+    <circle cx="404.2" cy="170.5" r="0.57" fill="#F3E8FF" opacity="0.39"/>
+    <circle cx="516.1" cy="189.3" r="0.82" fill="#F3E8FF" opacity="0.46"/>
+    <circle cx="496.2" cy="190.3" r="0.82" fill="#F3E8FF" opacity="0.73"/>
+    <circle cx="500.3" cy="141.8" r="0.38" fill="#F3E8FF" opacity="0.74"/>
+    <circle cx="267.2" cy="215.3" r="0.63" fill="#F3E8FF" opacity="0.40"/>
+    <circle cx="331.4" cy="180.9" r="0.75" fill="#F3E8FF" opacity="0.52"/>
+    <circle cx="835.9" cy="135.2" r="0.64" fill="#F3E8FF" opacity="0.47"/>
+    <circle cx="77.4" cy="229.2" r="0.52" fill="#F3E8FF" opacity="0.70"/>
+    <circle cx="656.9" cy="125.4" r="0.69" fill="#F3E8FF" opacity="0.49"/>
+    <circle cx="684.2" cy="114.0" r="0.77" fill="#F3E8FF" opacity="0.32"/>
+    <circle cx="-19.0" cy="161.7" r="0.49" fill="#F3E8FF" opacity="0.49"/>
+    <circle cx="726.6" cy="155.1" r="0.84" fill="#F3E8FF" opacity="0.71"/>
+    <circle cx="929.0" cy="60.5" r="0.87" fill="#F3E8FF" opacity="0.75"/>
+    <circle cx="526.2" cy="174.4" r="0.38" fill="#F3E8FF" opacity="0.32"/>
+    <circle cx="902.4" cy="105.2" r="0.61" fill="#F3E8FF" opacity="0.65"/>
+    <circle cx="297.3" cy="218.4" r="0.76" fill="#F3E8FF" opacity="0.50"/>
+    <circle cx="435.0" cy="162.9" r="0.35" fill="#F3E8FF" opacity="0.47"/>
+    <circle cx="83.0" cy="254.3" r="0.52" fill="#F3E8FF" opacity="0.79"/>
+    <circle cx="1066.7" cy="107.0" r="0.71" fill="#F3E8FF" opacity="0.50"/>
+    <circle cx="572.6" cy="156.1" r="0.47" fill="#F3E8FF" opacity="0.79"/>
+    <circle cx="1208.8" cy="25.0" r="0.40" fill="#F3E8FF" opacity="0.29"/>
+    <circle cx="670.2" cy="113.8" r="0.65" fill="#F3E8FF" opacity="0.56"/>
+    <circle cx="175.0" cy="251.8" r="0.62" fill="#F3E8FF" opacity="0.29"/>
+    <circle cx="993.8" cy="92.9" r="0.79" fill="#F3E8FF" opacity="0.71"/>
+    <circle cx="197.5" cy="205.4" r="0.75" fill="#F3E8FF" opacity="0.74"/>
+    <circle cx="670.1" cy="111.9" r="0.62" fill="#F3E8FF" opacity="0.73"/>
+    <circle cx="85.3" cy="246.5" r="0.87" fill="#F3E8FF" opacity="0.50"/>
+    <circle cx="869.6" cy="91.9" r="0.67" fill="#F3E8FF" opacity="0.38"/>
+    <circle cx="775.3" cy="155.3" r="0.75" fill="#F3E8FF" opacity="0.39"/>
+    <circle cx="538.4" cy="207.2" r="0.40" fill="#F3E8FF" opacity="0.25"/>
+    <circle cx="56.5" cy="259.9" r="0.81" fill="#F3E8FF" opacity="0.69"/>
+    <circle cx="1073.5" cy="63.5" r="0.77" fill="#F3E8FF" opacity="0.39"/>
+    <circle cx="105.7" cy="266.9" r="0.43" fill="#F3E8FF" opacity="0.55"/>
+    <circle cx="931.4" cy="98.0" r="0.69" fill="#F3E8FF" opacity="0.47"/>
+    <circle cx="954.8" cy="131.8" r="0.77" fill="#F3E8FF" opacity="0.71"/>
+    <circle cx="210.1" cy="195.9" r="0.90" fill="#F3E8FF" opacity="0.45"/>
+    <circle cx="983.3" cy="50.1" r="0.50" fill="#F3E8FF" opacity="0.47"/>
+    <circle cx="670.0" cy="150.0" r="0.81" fill="#F3E8FF" opacity="0.45"/>
+    <circle cx="61.0" cy="232.8" r="0.71" fill="#F3E8FF" opacity="0.76"/>
+    <circle cx="625.3" cy="139.3" r="0.81" fill="#F3E8FF" opacity="0.42"/>
+    <circle cx="1086.0" cy="90.0" r="0.58" fill="#F3E8FF" opacity="0.40"/>
+    <circle cx="1039.5" cy="107.6" r="0.88" fill="#F3E8FF" opacity="0.25"/>
+    <circle cx="129.1" cy="242.6" r="0.38" fill="#F3E8FF" opacity="0.73"/>
+    <circle cx="142.3" cy="232.0" r="0.42" fill="#F3E8FF" opacity="0.33"/>
+    <circle cx="296.1" cy="210.7" r="0.58" fill="#F3E8FF" opacity="0.58"/>
+    <circle cx="197.3" cy="204.0" r="0.84" fill="#F3E8FF" opacity="0.75"/>
+    <circle cx="611.8" cy="76.4" r="0.64" fill="#F3E8FF" opacity="0.38"/>
+    <circle cx="1023.0" cy="67.6" r="0.78" fill="#F3E8FF" opacity="0.38"/>
+    <circle cx="657.8" cy="147.3" r="0.44" fill="#F3E8FF" opacity="0.45"/>
+    <circle cx="832.3" cy="139.8" r="0.85" fill="#F3E8FF" opacity="0.54"/>
+    <circle cx="590.9" cy="152.5" r="0.74" fill="#F3E8FF" opacity="0.50"/>
+    <circle cx="839.4" cy="97.1" r="0.47" fill="#F3E8FF" opacity="0.41"/>
+    <circle cx="1072.8" cy="110.9" r="0.37" fill="#F3E8FF" opacity="0.32"/>
+    <circle cx="1064.3" cy="89.5" r="0.75" fill="#F3E8FF" opacity="0.74"/>
+    <circle cx="668.7" cy="97.6" r="0.66" fill="#F3E8FF" opacity="0.27"/>
+    <circle cx="238.1" cy="199.1" r="0.88" fill="#F3E8FF" opacity="0.28"/>
+    <circle cx="244.4" cy="203.3" r="0.85" fill="#F3E8FF" opacity="0.59"/>
+    <circle cx="1211.2" cy="107.2" r="0.47" fill="#F3E8FF" opacity="0.53"/>
+    <circle cx="159.9" cy="205.0" r="0.88" fill="#F3E8FF" opacity="0.68"/>
+    <circle cx="275.6" cy="165.3" r="0.81" fill="#F3E8FF" opacity="0.37"/>
+    <circle cx="793.0" cy="140.5" r="0.43" fill="#F3E8FF" opacity="0.31"/>
+    <circle cx="855.3" cy="128.6" r="0.68" fill="#F3E8FF" opacity="0.80"/>
+    <circle cx="683.2" cy="113.4" r="0.81" fill="#F3E8FF" opacity="0.52"/>
+    <circle cx="984.5" cy="118.9" r="0.59" fill="#F3E8FF" opacity="0.69"/>
+    <circle cx="630.8" cy="136.5" r="0.64" fill="#F3E8FF" opacity="0.68"/>
+    <circle cx="92.0" cy="210.2" r="0.64" fill="#F3E8FF" opacity="0.53"/>
+    <circle cx="145.3" cy="252.3" r="0.58" fill="#F3E8FF" opacity="0.45"/>
+    <circle cx="314.6" cy="211.8" r="0.79" fill="#F3E8FF" opacity="0.79"/>
+    <circle cx="167.0" cy="171.9" r="0.41" fill="#F3E8FF" opacity="0.25"/>
+    <circle cx="565.0" cy="185.6" r="0.42" fill="#F3E8FF" opacity="0.60"/>
+    <circle cx="873.0" cy="104.0" r="0.70" fill="#F3E8FF" opacity="0.61"/>
+    <circle cx="1003.6" cy="81.3" r="0.87" fill="#F3E8FF" opacity="0.63"/>
+    <circle cx="72.7" cy="203.5" r="0.60" fill="#F3E8FF" opacity="0.54"/>
+    <circle cx="20.0" cy="258.4" r="0.51" fill="#F3E8FF" opacity="0.32"/>
+    <circle cx="492.4" cy="186.5" r="0.59" fill="#F3E8FF" opacity="0.58"/>
+    <circle cx="973.9" cy="117.0" r="0.49" fill="#F3E8FF" opacity="0.36"/>
+    <circle cx="893.6" cy="61.5" r="0.69" fill="#F3E8FF" opacity="0.55"/>
+    <circle cx="1113.9" cy="77.5" r="0.87" fill="#F3E8FF" opacity="0.49"/>
+    <circle cx="506.1" cy="165.9" r="0.71" fill="#F3E8FF" opacity="0.40"/>
+    <circle cx="459.5" cy="189.8" r="0.75" fill="#F3E8FF" opacity="0.28"/>
+    <circle cx="255.8" cy="204.3" r="0.38" fill="#F3E8FF" opacity="0.51"/>
+    <circle cx="592.1" cy="141.7" r="0.67" fill="#F3E8FF" opacity="0.52"/>
+    <circle cx="852.8" cy="118.0" r="0.83" fill="#F3E8FF" opacity="0.37"/>
+    <circle cx="346.5" cy="207.9" r="0.72" fill="#F3E8FF" opacity="0.41"/>
+    <circle cx="247.8" cy="251.0" r="0.63" fill="#F3E8FF" opacity="0.34"/>
+    <circle cx="733.4" cy="120.8" r="0.86" fill="#F3E8FF" opacity="0.71"/>
+    <circle cx="1045.8" cy="68.7" r="0.76" fill="#F3E8FF" opacity="0.71"/>
+    <circle cx="1023.9" cy="125.4" r="0.88" fill="#F3E8FF" opacity="0.50"/>
+    <circle cx="366.3" cy="214.1" r="0.62" fill="#F3E8FF" opacity="0.38"/>
+    <circle cx="60.7" cy="244.9" r="0.69" fill="#F3E8FF" opacity="0.51"/>
+    <circle cx="329.9" cy="126.6" r="0.56" fill="#F3E8FF" opacity="0.54"/>
+    <circle cx="281.8" cy="199.2" r="0.43" fill="#F3E8FF" opacity="0.74"/>
+    <circle cx="288.2" cy="205.3" r="0.58" fill="#F3E8FF" opacity="0.66"/>
+    <circle cx="333.4" cy="176.9" r="0.56" fill="#F3E8FF" opacity="0.55"/>
+    <circle cx="1051.0" cy="12.4" r="0.68" fill="#F3E8FF" opacity="0.71"/>
+    <circle cx="245.2" cy="236.7" r="0.80" fill="#F3E8FF" opacity="0.53"/>
+    <circle cx="903.2" cy="123.1" r="0.35" fill="#F3E8FF" opacity="0.56"/>
+    <circle cx="1054.2" cy="82.2" r="0.77" fill="#F3E8FF" opacity="0.31"/>
+    <circle cx="622.3" cy="156.2" r="0.73" fill="#F3E8FF" opacity="0.66"/>
+    <circle cx="183.2" cy="197.5" r="0.67" fill="#F3E8FF" opacity="0.52"/>
+    <circle cx="207.8" cy="231.0" r="0.47" fill="#F3E8FF" opacity="0.26"/>
+    <circle cx="735.8" cy="121.0" r="0.42" fill="#F3E8FF" opacity="0.38"/>
+    <circle cx="454.1" cy="179.4" r="0.37" fill="#F3E8FF" opacity="0.54"/>
+    <circle cx="1016.3" cy="66.4" r="0.83" fill="#F3E8FF" opacity="0.30"/>
+    <circle cx="752.8" cy="133.0" r="0.65" fill="#F3E8FF" opacity="0.72"/>
+    <circle cx="344.7" cy="205.3" r="0.80" fill="#F3E8FF" opacity="0.64"/>
+    <circle cx="311.0" cy="181.0" r="0.63" fill="#F3E8FF" opacity="0.57"/>
+    <circle cx="242.8" cy="187.6" r="0.60" fill="#F3E8FF" opacity="0.65"/>
+    <circle cx="1131.8" cy="61.4" r="0.43" fill="#F3E8FF" opacity="0.30"/>
+    <circle cx="1048.2" cy="65.7" r="0.67" fill="#F3E8FF" opacity="0.45"/>
+    <circle cx="439.9" cy="163.8" r="0.48" fill="#F3E8FF" opacity="0.58"/>
+    <circle cx="520.7" cy="202.3" r="0.40" fill="#F3E8FF" opacity="0.47"/>
+    <circle cx="306.5" cy="176.7" r="0.88" fill="#F3E8FF" opacity="0.34"/>
+    <circle cx="755.8" cy="106.5" r="0.46" fill="#F3E8FF" opacity="0.36"/>
+    <circle cx="465.0" cy="208.1" r="0.39" fill="#F3E8FF" opacity="0.65"/>
+    <circle cx="553.0" cy="182.0" r="0.85" fill="#F3E8FF" opacity="0.52"/>
+    <circle cx="1093.5" cy="100.7" r="0.41" fill="#F3E8FF" opacity="0.32"/>
+    <circle cx="34.4" cy="234.4" r="0.38" fill="#F3E8FF" opacity="0.74"/>
+    <circle cx="521.8" cy="135.0" r="0.84" fill="#F3E8FF" opacity="0.45"/>
+    <circle cx="1032.3" cy="112.1" r="0.90" fill="#F3E8FF" opacity="0.37"/>
+    <circle cx="840.1" cy="123.5" r="0.52" fill="#F3E8FF" opacity="0.26"/>
+    <circle cx="668.2" cy="166.8" r="0.58" fill="#F3E8FF" opacity="0.79"/>
+    <circle cx="307.9" cy="179.3" r="0.37" fill="#F3E8FF" opacity="0.30"/>
+    <circle cx="891.4" cy="109.8" r="0.35" fill="#F3E8FF" opacity="0.62"/>
+    <circle cx="396.1" cy="230.9" r="0.84" fill="#F3E8FF" opacity="0.27"/>
+    <circle class="tw" cx="1043.2" cy="31.1" r="1.06" fill="#FFFFFF" style="animation-duration:5.0s;animation-delay:-2.2s"/>
+    <circle class="tw" cx="1020.6" cy="194.7" r="1.00" fill="#C7D2FE" style="animation-duration:4.9s;animation-delay:-3.0s"/>
+    <circle class="tw" cx="665.2" cy="127.3" r="0.61" fill="#F5D0FE" style="animation-duration:3.2s;animation-delay:-1.6s"/>
+    <circle class="tw" cx="218.2" cy="219.3" r="0.62" fill="#FFFFFF" style="animation-duration:2.6s;animation-delay:-2.5s"/>
+    <circle class="tw" cx="957.7" cy="96.1" r="2.10" fill="#C7D2FE" style="animation-duration:4.9s;animation-delay:-1.4s"/>
+    <circle class="tw" cx="1175.4" cy="59.9" r="1.14" fill="#F5D0FE" style="animation-duration:3.1s;animation-delay:-3.0s"/>
+    <circle class="tw" cx="1110.8" cy="165.3" r="0.61" fill="#FFFFFF" style="animation-duration:4.0s;animation-delay:-0.9s"/>
+    <circle class="tw" cx="179.7" cy="58.2" r="1.17" fill="#C7D2FE" style="animation-duration:5.0s;animation-delay:-0.8s"/>
+    <circle class="tw" cx="1058.8" cy="170.4" r="1.45" fill="#C7D2FE" style="animation-duration:5.0s;animation-delay:-3.3s"/>
+    <circle class="tw" cx="861.5" cy="224.0" r="1.46" fill="#E9D5FF" style="animation-duration:4.5s;animation-delay:-1.2s"/>
+    <circle class="tw" cx="953.7" cy="78.1" r="0.69" fill="#C7D2FE" style="animation-duration:2.4s;animation-delay:-1.7s"/>
+    <circle class="tw" cx="238.5" cy="254.4" r="0.64" fill="#C7D2FE" style="animation-duration:4.4s;animation-delay:-3.8s"/>
+    <circle class="tw" cx="437.5" cy="27.3" r="0.61" fill="#F5D0FE" style="animation-duration:2.5s;animation-delay:-0.8s"/>
+    <circle class="tw" cx="991.9" cy="202.3" r="0.61" fill="#E9D5FF" style="animation-duration:4.6s;animation-delay:-4.3s"/>
+    <circle class="tw" cx="895.5" cy="198.6" r="0.60" fill="#F5D0FE" style="animation-duration:3.2s;animation-delay:-1.5s"/>
+    <circle class="tw" cx="422.7" cy="202.8" r="0.62" fill="#E9D5FF" style="animation-duration:4.5s;animation-delay:-4.0s"/>
+    <circle class="tw" cx="416.8" cy="276.1" r="0.61" fill="#C7D2FE" style="animation-duration:5.1s;animation-delay:-1.1s"/>
+    <circle class="tw" cx="199.6" cy="102.9" r="1.30" fill="#C7D2FE" style="animation-duration:4.1s;animation-delay:-1.9s"/>
+    <circle class="tw" cx="99.2" cy="132.5" r="0.63" fill="#FFFFFF" style="animation-duration:5.1s;animation-delay:-4.8s"/>
+    <circle class="tw" cx="716.1" cy="178.8" r="0.75" fill="#F5D0FE" style="animation-duration:4.0s;animation-delay:-3.0s"/>
+    <circle class="tw" cx="1180.1" cy="95.3" r="0.90" fill="#FDE68A" style="animation-duration:3.1s;animation-delay:-3.0s"/>
+    <circle class="tw" cx="606.9" cy="158.9" r="0.62" fill="#C7D2FE" style="animation-duration:4.1s;animation-delay:-1.6s"/>
+    <circle class="tw" cx="500.1" cy="23.8" r="0.69" fill="#F5D0FE" style="animation-duration:5.0s;animation-delay:-2.2s"/>
+    <circle class="tw" cx="1143.9" cy="240.2" r="0.66" fill="#E9D5FF" style="animation-duration:4.0s;animation-delay:-0.3s"/>
+    <circle class="tw" cx="846.9" cy="278.7" r="0.94" fill="#F5D0FE" style="animation-duration:4.9s;animation-delay:-3.6s"/>
+    <circle class="tw" cx="248.8" cy="208.8" r="1.62" fill="#FFFFFF" style="animation-duration:3.1s;animation-delay:-0.1s"/>
+    <circle class="tw" cx="371.8" cy="82.4" r="0.61" fill="#FFFFFF" style="animation-duration:2.6s;animation-delay:-1.8s"/>
+    <circle class="tw" cx="811.8" cy="256.4" r="0.65" fill="#FFFFFF" style="animation-duration:3.0s;animation-delay:-0.7s"/>
+    <circle class="tw" cx="154.0" cy="285.9" r="0.61" fill="#F5D0FE" style="animation-duration:2.5s;animation-delay:-1.8s"/>
+    <circle class="tw" cx="1166.4" cy="70.5" r="1.48" fill="#F5D0FE" style="animation-duration:3.3s;animation-delay:-1.8s"/>
+    <circle class="tw" cx="962.7" cy="236.3" r="1.70" fill="#FFFFFF" style="animation-duration:3.4s;animation-delay:-1.6s"/>
+    <circle class="tw" cx="332.3" cy="153.3" r="0.60" fill="#FFFFFF" style="animation-duration:2.9s;animation-delay:-1.6s"/>
+    <circle class="tw" cx="1162.1" cy="198.4" r="0.63" fill="#FFFFFF" style="animation-duration:3.8s;animation-delay:-2.7s"/>
+    <circle class="tw" cx="987.7" cy="105.2" r="0.63" fill="#F5D0FE" style="animation-duration:3.5s;animation-delay:-1.4s"/>
+    <circle class="tw" cx="816.5" cy="38.7" r="0.61" fill="#FDE68A" style="animation-duration:4.1s;animation-delay:-0.7s"/>
+    <circle class="tw" cx="524.7" cy="70.2" r="0.66" fill="#F5D0FE" style="animation-duration:4.7s;animation-delay:-4.2s"/>
+    <circle class="tw" cx="145.5" cy="120.4" r="0.83" fill="#FFFFFF" style="animation-duration:2.7s;animation-delay:-1.2s"/>
+    <circle class="tw" cx="551.7" cy="219.9" r="0.85" fill="#FFFFFF" style="animation-duration:3.3s;animation-delay:-2.1s"/>
+    <circle class="tw" cx="960.7" cy="202.9" r="0.92" fill="#E9D5FF" style="animation-duration:3.9s;animation-delay:-2.7s"/>
+    <circle class="tw" cx="1178.0" cy="256.3" r="0.60" fill="#FDE68A" style="animation-duration:3.4s;animation-delay:-3.4s"/>
+    <circle class="tw" cx="35.0" cy="171.3" r="0.77" fill="#F5D0FE" style="animation-duration:2.5s;animation-delay:-2.1s"/>
+    <circle class="tw" cx="746.1" cy="119.7" r="0.96" fill="#E9D5FF" style="animation-duration:4.2s;animation-delay:-1.3s"/>
+    <circle class="tw" cx="161.6" cy="215.4" r="1.17" fill="#E9D5FF" style="animation-duration:3.0s;animation-delay:-1.4s"/>
+    <circle class="tw" cx="548.6" cy="203.6" r="0.89" fill="#FFFFFF" style="animation-duration:3.4s;animation-delay:-0.9s"/>
+    <circle class="tw" cx="1062.7" cy="17.0" r="0.71" fill="#FDE68A" style="animation-duration:3.7s;animation-delay:-1.8s"/>
+    <circle class="tw" cx="102.2" cy="178.0" r="0.64" fill="#FFFFFF" style="animation-duration:4.6s;animation-delay:-3.4s"/>
+    <circle class="tw" cx="1161.7" cy="87.0" r="1.29" fill="#FDE68A" style="animation-duration:3.0s;animation-delay:-2.1s"/>
+    <circle class="tw" cx="426.4" cy="110.8" r="0.94" fill="#F5D0FE" style="animation-duration:3.2s;animation-delay:-2.5s"/>
+    <circle class="tw" cx="381.5" cy="220.5" r="0.77" fill="#C7D2FE" style="animation-duration:4.7s;animation-delay:-1.3s"/>
+    <circle class="tw" cx="1130.1" cy="90.3" r="0.71" fill="#C7D2FE" style="animation-duration:3.4s;animation-delay:-1.5s"/>
+    <circle class="tw" cx="550.6" cy="29.8" r="0.82" fill="#FFFFFF" style="animation-duration:3.5s;animation-delay:-1.9s"/>
+    <circle class="tw" cx="894.8" cy="246.8" r="0.69" fill="#E9D5FF" style="animation-duration:3.1s;animation-delay:-0.4s"/>
+    <circle class="tw" cx="42.2" cy="255.2" r="0.91" fill="#F5D0FE" style="animation-duration:3.6s;animation-delay:-3.0s"/>
+    <circle class="tw" cx="278.1" cy="70.7" r="0.66" fill="#F5D0FE" style="animation-duration:4.0s;animation-delay:-3.2s"/>
+    <circle class="tw" cx="407.4" cy="275.7" r="1.27" fill="#FDE68A" style="animation-duration:3.6s;animation-delay:-1.6s"/>
+    <circle class="tw" cx="558.9" cy="195.6" r="0.70" fill="#FFFFFF" style="animation-duration:3.4s;animation-delay:-2.1s"/>
+    <circle class="tw" cx="1119.6" cy="252.9" r="0.85" fill="#FFFFFF" style="animation-duration:4.1s;animation-delay:-0.3s"/>
+    <circle class="tw" cx="301.3" cy="133.7" r="0.60" fill="#FDE68A" style="animation-duration:2.4s;animation-delay:-1.4s"/>
+    <circle class="tw" cx="587.0" cy="90.1" r="0.61" fill="#C7D2FE" style="animation-duration:5.1s;animation-delay:-2.0s"/>
+    <circle class="tw" cx="931.9" cy="267.6" r="0.60" fill="#E9D5FF" style="animation-duration:4.5s;animation-delay:-0.9s"/>
+    <circle class="tw" cx="504.1" cy="96.3" r="0.96" fill="#E9D5FF" style="animation-duration:4.5s;animation-delay:-1.2s"/>
+    <circle class="tw" cx="151.6" cy="130.9" r="0.85" fill="#FFFFFF" style="animation-duration:4.6s;animation-delay:-0.6s"/>
+    <circle class="tw" cx="180.0" cy="229.8" r="0.61" fill="#FFFFFF" style="animation-duration:4.5s;animation-delay:-1.9s"/>
+    <circle class="tw" cx="54.6" cy="110.9" r="0.61" fill="#FFFFFF" style="animation-duration:4.8s;animation-delay:-3.3s"/>
+    <circle class="tw" cx="382.7" cy="72.0" r="0.72" fill="#F5D0FE" style="animation-duration:4.8s;animation-delay:-1.2s"/>
+    <circle class="tw" cx="1065.0" cy="154.2" r="0.90" fill="#FFFFFF" style="animation-duration:3.6s;animation-delay:-1.8s"/>
+    <circle class="tw" cx="606.3" cy="9.4" r="1.52" fill="#F5D0FE" style="animation-duration:2.5s;animation-delay:-1.3s"/>
+    <circle class="tw" cx="616.5" cy="290.1" r="0.88" fill="#F5D0FE" style="animation-duration:3.8s;animation-delay:-2.4s"/>
+    <circle class="tw" cx="610.1" cy="13.1" r="0.96" fill="#F5D0FE" style="animation-duration:2.9s;animation-delay:-1.7s"/>
+    <circle class="tw" cx="790.6" cy="216.1" r="0.69" fill="#E9D5FF" style="animation-duration:5.2s;animation-delay:-1.8s"/>
+    <g transform="translate(278.0 70.0)"><path class="sp" d="M0 -11.0 Q0 0 11.0 0 Q0 0 0 11.0 Q0 0 -11.0 0 Q0 0 0 -11.0 Z" fill="#FDE68A" style="animation-delay:0.0s"/></g>
+    <g transform="translate(930.0 92.0)"><path class="sp" d="M0 -9.0 Q0 0 9.0 0 Q0 0 0 9.0 Q0 0 -9.0 0 Q0 0 0 -9.0 Z" fill="#F5D0FE" style="animation-delay:-1.4s"/></g>
+    <g transform="translate(1058.0 186.0)"><path class="sp" d="M0 -7.0 Q0 0 7.0 0 Q0 0 0 7.0 Q0 0 -7.0 0 Q0 0 0 -7.0 Z" fill="#FFFFFF" style="animation-delay:-2.6s"/></g>
+    <g transform="translate(150.0 188.0)"><path class="sp" d="M0 -6.0 Q0 0 6.0 0 Q0 0 0 6.0 Q0 0 -6.0 0 Q0 0 0 -6.0 Z" fill="#E9D5FF" style="animation-delay:-0.8s"/></g>
+    <g transform="translate(860.0 36.0)"><path class="sp" d="M0 -5.0 Q0 0 5.0 0 Q0 0 0 5.0 Q0 0 -5.0 0 Q0 0 0 -5.0 Z" fill="#FFFFFF" style="animation-delay:-3.1s"/></g>
+    <g class="shoot" style="animation-delay:1.5s"><line x1="1090.0" y1="24.0" x2="955.8" y2="91.1" stroke="url(#tail1)" stroke-width="2.2" stroke-linecap="round"/><circle cx="1090.0" cy="24.0" r="2.2" fill="#FFFFFF"/></g>
+    <g class="shoot" style="animation-delay:6.0s"><line x1="760.0" y1="6.0" x2="652.7" y2="59.7" stroke="url(#tail2)" stroke-width="2.2" stroke-linecap="round"/><circle cx="760.0" cy="6.0" r="2.2" fill="#FFFFFF"/></g>
+    <g class="glow"><path d="M13.45 1.06Q9.2 1.06 7.32 -0.24Q5.43 -1.53 5.07 -3.54Q4.72 -5.55 4.72 -7.91V-49.21Q4.72 -51.57 5.13 -53.51Q5.55 -55.46 7.43 -56.7Q9.32 -57.94 13.69 -57.94Q18.05 -57.94 20.06 -56.23Q22.07 -54.52 22.07 -50.62L20.53 -49.32Q20.77 -49.91 21.95 -51.33Q23.13 -52.75 25.02 -54.28Q26.9 -55.81 29.44 -56.94Q31.98 -58.06 34.93 -58.06Q38.82 -58.06 41.95 -56.94Q45.08 -55.81 47.61 -53.63Q50.15 -51.45 52.04 -48.14Q53.69 -50.5 56.05 -52.75Q58.41 -54.99 61.65 -56.52Q64.9 -58.06 68.91 -58.06Q75.76 -58.06 80.53 -54.57Q85.31 -51.09 87.79 -44.6Q90.27 -38.11 90.27 -28.91V-7.79Q90.27 -5.55 89.86 -3.48Q89.44 -1.42 87.56 -0.18Q85.67 1.06 81.3 1.06Q76.94 1.06 75.11 -0.24Q73.28 -1.53 72.86 -3.6Q72.45 -5.66 72.45 -7.91V-29.03Q72.45 -32.69 71.63 -35.16Q70.8 -37.64 69.09 -39Q67.38 -40.36 64.78 -40.36Q62.07 -40.36 60.18 -39.12Q58.29 -37.88 57.35 -35.34Q56.4 -32.8 56.4 -28.91V-7.79Q56.4 -5.43 55.81 -3.36Q55.22 -1.3 53.28 -0.06Q51.33 1.18 47.08 1.06Q42.83 0.94 41.06 -0.35Q39.29 -1.65 38.94 -3.72Q38.59 -5.78 38.59 -7.91V-29.03Q38.59 -32.69 37.76 -35.22Q36.93 -37.76 35.28 -39.06Q33.63 -40.36 30.92 -40.36Q27.97 -40.36 26.08 -38.82Q24.19 -37.29 23.3 -34.75Q22.42 -32.21 22.42 -29.03V-7.79Q22.42 -5.43 22.01 -3.42Q21.59 -1.42 19.71 -0.18Q17.82 1.06 13.45 1.06Z M112.03 1.06Q107.67 1.06 105.84 -0.18Q104.01 -1.42 103.59 -3.48Q103.18 -5.55 103.18 -7.79V-48.97Q103.18 -51.33 103.59 -53.34Q104.01 -55.34 105.9 -56.58Q107.78 -57.82 112.15 -57.82Q116.4 -57.82 118.23 -56.52Q120.06 -55.22 120.47 -53.22Q120.88 -51.21 120.88 -48.73V-7.67Q120.88 -5.43 120.47 -3.36Q120.06 -1.3 118.23 -0.12Q116.4 1.06 112.03 1.06ZM112.03 -66.43Q107.55 -66.43 105.66 -67.73Q103.77 -69.03 103.36 -71.15Q102.95 -73.28 102.95 -75.64Q102.95 -78.12 103.42 -80.18Q103.89 -82.25 105.78 -83.48Q107.67 -84.72 112.15 -84.72Q116.52 -84.72 118.4 -83.43Q120.29 -82.13 120.7 -80Q121.12 -77.88 121.12 -75.52Q121.12 -73.16 120.7 -71.04Q120.29 -68.91 118.4 -67.67Q116.52 -66.43 112.03 -66.43Z M185.12 -55.46Q187.72 -52.98 188.49 -51.03Q189.25 -49.09 188.43 -47.14Q187.6 -45.19 185.12 -42.6L147.6 -2.01Q145.36 0.35 143.47 1.24Q141.58 2.12 139.63 1.42Q137.69 0.71 135.21 -1.65Q132.73 -4.13 131.97 -6.08Q131.2 -8.02 132.08 -9.97Q132.97 -11.92 135.21 -14.28L172.73 -54.99Q176.39 -58.65 178.93 -58.82Q181.47 -59 185.12 -55.46ZM135.21 -55.46Q137.69 -57.82 139.63 -58.53Q141.58 -59.24 143.47 -58.35Q145.36 -57.47 147.6 -54.99L185.12 -14.28Q187.48 -11.8 188.37 -9.91Q189.25 -8.02 188.55 -6.08Q187.84 -4.13 185.12 -1.65Q182.65 0.71 180.76 1.42Q178.87 2.12 177.04 1.24Q175.21 0.35 172.73 -2.01L135.21 -42.6Q132.85 -45.08 132.02 -47.02Q131.2 -48.97 131.97 -50.98Q132.73 -52.98 135.21 -55.46Z M208.3 1.06Q203.94 1.06 202.11 -0.18Q200.28 -1.42 199.87 -3.48Q199.45 -5.55 199.45 -7.79V-48.97Q199.45 -51.33 199.87 -53.34Q200.28 -55.34 202.17 -56.58Q204.05 -57.82 208.42 -57.82Q212.67 -57.82 214.5 -56.52Q216.33 -55.22 216.74 -53.22Q217.15 -51.21 217.15 -48.73V-7.67Q217.15 -5.43 216.74 -3.36Q216.33 -1.3 214.5 -0.12Q212.67 1.06 208.3 1.06ZM208.3 -66.43Q203.82 -66.43 201.93 -67.73Q200.04 -69.03 199.63 -71.15Q199.22 -73.28 199.22 -75.64Q199.22 -78.12 199.69 -80.18Q200.16 -82.25 202.05 -83.48Q203.94 -84.72 208.42 -84.72Q212.79 -84.72 214.67 -83.43Q216.56 -82.13 216.98 -80Q217.39 -77.88 217.39 -75.52Q217.39 -73.16 216.98 -71.04Q216.56 -68.91 214.67 -67.67Q212.79 -66.43 208.3 -66.43Z M262.04 0.94Q256.26 0.94 251.83 -1.47Q247.41 -3.89 244.52 -8.02Q241.63 -12.15 240.15 -17.46Q238.68 -22.77 238.8 -28.79Q238.8 -34.57 240.33 -39.88Q241.86 -45.19 244.75 -49.21Q247.65 -53.22 251.95 -55.52Q256.26 -57.82 262.04 -57.82Q267.23 -57.82 272.13 -55.46Q277.03 -53.1 280.8 -49.03Q284.58 -44.96 286.76 -39.71Q288.95 -34.46 288.95 -28.67Q288.95 -22.66 286.76 -17.29Q284.58 -11.92 280.8 -7.79Q277.03 -3.66 272.19 -1.36Q267.35 0.94 262.04 0.94ZM259.56 -16.52Q262.87 -16.52 265.46 -18.11Q268.06 -19.71 269.65 -22.42Q271.25 -25.13 271.25 -28.44Q271.25 -31.86 269.71 -34.52Q268.18 -37.17 265.58 -38.7Q262.99 -40.24 259.68 -40.24Q256.5 -40.24 253.84 -38.7Q251.19 -37.17 249.71 -34.52Q248.24 -31.86 248.24 -28.44Q248.24 -25.13 249.77 -22.42Q251.3 -19.71 253.9 -18.11Q256.5 -16.52 259.56 -16.52ZM239.03 1.06Q234.78 1.06 232.9 -0.24Q231.01 -1.53 230.59 -3.6Q230.18 -5.66 230.18 -7.91V-75.76Q230.18 -78.23 230.65 -80.24Q231.13 -82.25 232.95 -83.48Q234.78 -84.72 239.15 -84.72Q243.4 -84.72 245.17 -83.43Q246.94 -82.13 247.29 -80.06Q247.65 -78 247.53 -75.76V-4.25Q246.94 -1.53 245.05 -0.24Q243.16 1.06 239.03 1.06Z M328.17 2.01Q322.63 2.01 317.14 -0.18Q311.65 -2.36 307.17 -6.37Q302.68 -10.38 300.09 -15.99Q297.49 -21.59 297.49 -28.44Q297.49 -34.81 299.85 -40.3Q302.21 -45.78 306.46 -50.03Q310.71 -54.28 316.2 -56.7Q321.68 -59.12 327.94 -59.12Q336.43 -59.12 343.34 -55.05Q350.24 -50.98 354.37 -44.01Q358.5 -37.05 358.5 -28.56Q358.5 -21.36 355.84 -15.75Q353.19 -10.15 348.76 -6.14Q344.34 -2.12 338.97 -0.06Q333.6 2.01 328.17 2.01ZM327.94 -15.81Q330.77 -15.81 333.72 -17.23Q336.67 -18.64 338.67 -21.48Q340.68 -24.31 340.68 -28.67Q340.68 -32.45 339.03 -35.28Q337.38 -38.11 334.49 -39.71Q331.59 -41.3 327.82 -41.3Q324.28 -41.3 321.5 -39.65Q318.73 -38 317.02 -35.1Q315.31 -32.21 315.31 -28.56Q315.31 -24.31 317.26 -21.42Q319.2 -18.53 322.15 -17.17Q325.1 -15.81 327.94 -15.81Z M397.13 2.01Q391.59 2.01 386.1 -0.18Q380.61 -2.36 376.13 -6.37Q371.65 -10.38 369.05 -15.99Q366.45 -21.59 366.45 -28.44Q366.45 -34.81 368.81 -40.3Q371.17 -45.78 375.42 -50.03Q379.67 -54.28 385.16 -56.7Q390.64 -59.12 396.9 -59.12Q405.39 -59.12 412.3 -55.05Q419.2 -50.98 423.33 -44.01Q427.46 -37.05 427.46 -28.56Q427.46 -21.36 424.8 -15.75Q422.15 -10.15 417.73 -6.14Q413.3 -2.12 407.93 -0.06Q402.56 2.01 397.13 2.01ZM396.9 -15.81Q399.73 -15.81 402.68 -17.23Q405.63 -18.64 407.64 -21.48Q409.64 -24.31 409.64 -28.67Q409.64 -32.45 407.99 -35.28Q406.34 -38.11 403.45 -39.71Q400.56 -41.3 396.78 -41.3Q393.24 -41.3 390.47 -39.65Q387.69 -38 385.98 -35.1Q384.27 -32.21 384.27 -28.56Q384.27 -24.31 386.22 -21.42Q388.17 -18.53 391.12 -17.17Q394.07 -15.81 396.9 -15.81Z" transform="translate(383.91 163.36)" fill="#A78BFA" filter="url(#soft)"/></g>
+    <g class="rise"><path d="M13.45 1.06Q9.2 1.06 7.32 -0.24Q5.43 -1.53 5.07 -3.54Q4.72 -5.55 4.72 -7.91V-49.21Q4.72 -51.57 5.13 -53.51Q5.55 -55.46 7.43 -56.7Q9.32 -57.94 13.69 -57.94Q18.05 -57.94 20.06 -56.23Q22.07 -54.52 22.07 -50.62L20.53 -49.32Q20.77 -49.91 21.95 -51.33Q23.13 -52.75 25.02 -54.28Q26.9 -55.81 29.44 -56.94Q31.98 -58.06 34.93 -58.06Q38.82 -58.06 41.95 -56.94Q45.08 -55.81 47.61 -53.63Q50.15 -51.45 52.04 -48.14Q53.69 -50.5 56.05 -52.75Q58.41 -54.99 61.65 -56.52Q64.9 -58.06 68.91 -58.06Q75.76 -58.06 80.53 -54.57Q85.31 -51.09 87.79 -44.6Q90.27 -38.11 90.27 -28.91V-7.79Q90.27 -5.55 89.86 -3.48Q89.44 -1.42 87.56 -0.18Q85.67 1.06 81.3 1.06Q76.94 1.06 75.11 -0.24Q73.28 -1.53 72.86 -3.6Q72.45 -5.66 72.45 -7.91V-29.03Q72.45 -32.69 71.63 -35.16Q70.8 -37.64 69.09 -39Q67.38 -40.36 64.78 -40.36Q62.07 -40.36 60.18 -39.12Q58.29 -37.88 57.35 -35.34Q56.4 -32.8 56.4 -28.91V-7.79Q56.4 -5.43 55.81 -3.36Q55.22 -1.3 53.28 -0.06Q51.33 1.18 47.08 1.06Q42.83 0.94 41.06 -0.35Q39.29 -1.65 38.94 -3.72Q38.59 -5.78 38.59 -7.91V-29.03Q38.59 -32.69 37.76 -35.22Q36.93 -37.76 35.28 -39.06Q33.63 -40.36 30.92 -40.36Q27.97 -40.36 26.08 -38.82Q24.19 -37.29 23.3 -34.75Q22.42 -32.21 22.42 -29.03V-7.79Q22.42 -5.43 22.01 -3.42Q21.59 -1.42 19.71 -0.18Q17.82 1.06 13.45 1.06Z M112.03 1.06Q107.67 1.06 105.84 -0.18Q104.01 -1.42 103.59 -3.48Q103.18 -5.55 103.18 -7.79V-48.97Q103.18 -51.33 103.59 -53.34Q104.01 -55.34 105.9 -56.58Q107.78 -57.82 112.15 -57.82Q116.4 -57.82 118.23 -56.52Q120.06 -55.22 120.47 -53.22Q120.88 -51.21 120.88 -48.73V-7.67Q120.88 -5.43 120.47 -3.36Q120.06 -1.3 118.23 -0.12Q116.4 1.06 112.03 1.06ZM112.03 -66.43Q107.55 -66.43 105.66 -67.73Q103.77 -69.03 103.36 -71.15Q102.95 -73.28 102.95 -75.64Q102.95 -78.12 103.42 -80.18Q103.89 -82.25 105.78 -83.48Q107.67 -84.72 112.15 -84.72Q116.52 -84.72 118.4 -83.43Q120.29 -82.13 120.7 -80Q121.12 -77.88 121.12 -75.52Q121.12 -73.16 120.7 -71.04Q120.29 -68.91 118.4 -67.67Q116.52 -66.43 112.03 -66.43Z M185.12 -55.46Q187.72 -52.98 188.49 -51.03Q189.25 -49.09 188.43 -47.14Q187.6 -45.19 185.12 -42.6L147.6 -2.01Q145.36 0.35 143.47 1.24Q141.58 2.12 139.63 1.42Q137.69 0.71 135.21 -1.65Q132.73 -4.13 131.97 -6.08Q131.2 -8.02 132.08 -9.97Q132.97 -11.92 135.21 -14.28L172.73 -54.99Q176.39 -58.65 178.93 -58.82Q181.47 -59 185.12 -55.46ZM135.21 -55.46Q137.69 -57.82 139.63 -58.53Q141.58 -59.24 143.47 -58.35Q145.36 -57.47 147.6 -54.99L185.12 -14.28Q187.48 -11.8 188.37 -9.91Q189.25 -8.02 188.55 -6.08Q187.84 -4.13 185.12 -1.65Q182.65 0.71 180.76 1.42Q178.87 2.12 177.04 1.24Q175.21 0.35 172.73 -2.01L135.21 -42.6Q132.85 -45.08 132.02 -47.02Q131.2 -48.97 131.97 -50.98Q132.73 -52.98 135.21 -55.46Z M208.3 1.06Q203.94 1.06 202.11 -0.18Q200.28 -1.42 199.87 -3.48Q199.45 -5.55 199.45 -7.79V-48.97Q199.45 -51.33 199.87 -53.34Q200.28 -55.34 202.17 -56.58Q204.05 -57.82 208.42 -57.82Q212.67 -57.82 214.5 -56.52Q216.33 -55.22 216.74 -53.22Q217.15 -51.21 217.15 -48.73V-7.67Q217.15 -5.43 216.74 -3.36Q216.33 -1.3 214.5 -0.12Q212.67 1.06 208.3 1.06ZM208.3 -66.43Q203.82 -66.43 201.93 -67.73Q200.04 -69.03 199.63 -71.15Q199.22 -73.28 199.22 -75.64Q199.22 -78.12 199.69 -80.18Q200.16 -82.25 202.05 -83.48Q203.94 -84.72 208.42 -84.72Q212.79 -84.72 214.67 -83.43Q216.56 -82.13 216.98 -80Q217.39 -77.88 217.39 -75.52Q217.39 -73.16 216.98 -71.04Q216.56 -68.91 214.67 -67.67Q212.79 -66.43 208.3 -66.43Z M262.04 0.94Q256.26 0.94 251.83 -1.47Q247.41 -3.89 244.52 -8.02Q241.63 -12.15 240.15 -17.46Q238.68 -22.77 238.8 -28.79Q238.8 -34.57 240.33 -39.88Q241.86 -45.19 244.75 -49.21Q247.65 -53.22 251.95 -55.52Q256.26 -57.82 262.04 -57.82Q267.23 -57.82 272.13 -55.46Q277.03 -53.1 280.8 -49.03Q284.58 -44.96 286.76 -39.71Q288.95 -34.46 288.95 -28.67Q288.95 -22.66 286.76 -17.29Q284.58 -11.92 280.8 -7.79Q277.03 -3.66 272.19 -1.36Q267.35 0.94 262.04 0.94ZM259.56 -16.52Q262.87 -16.52 265.46 -18.11Q268.06 -19.71 269.65 -22.42Q271.25 -25.13 271.25 -28.44Q271.25 -31.86 269.71 -34.52Q268.18 -37.17 265.58 -38.7Q262.99 -40.24 259.68 -40.24Q256.5 -40.24 253.84 -38.7Q251.19 -37.17 249.71 -34.52Q248.24 -31.86 248.24 -28.44Q248.24 -25.13 249.77 -22.42Q251.3 -19.71 253.9 -18.11Q256.5 -16.52 259.56 -16.52ZM239.03 1.06Q234.78 1.06 232.9 -0.24Q231.01 -1.53 230.59 -3.6Q230.18 -5.66 230.18 -7.91V-75.76Q230.18 -78.23 230.65 -80.24Q231.13 -82.25 232.95 -83.48Q234.78 -84.72 239.15 -84.72Q243.4 -84.72 245.17 -83.43Q246.94 -82.13 247.29 -80.06Q247.65 -78 247.53 -75.76V-4.25Q246.94 -1.53 245.05 -0.24Q243.16 1.06 239.03 1.06Z M328.17 2.01Q322.63 2.01 317.14 -0.18Q311.65 -2.36 307.17 -6.37Q302.68 -10.38 300.09 -15.99Q297.49 -21.59 297.49 -28.44Q297.49 -34.81 299.85 -40.3Q302.21 -45.78 306.46 -50.03Q310.71 -54.28 316.2 -56.7Q321.68 -59.12 327.94 -59.12Q336.43 -59.12 343.34 -55.05Q350.24 -50.98 354.37 -44.01Q358.5 -37.05 358.5 -28.56Q358.5 -21.36 355.84 -15.75Q353.19 -10.15 348.76 -6.14Q344.34 -2.12 338.97 -0.06Q333.6 2.01 328.17 2.01ZM327.94 -15.81Q330.77 -15.81 333.72 -17.23Q336.67 -18.64 338.67 -21.48Q340.68 -24.31 340.68 -28.67Q340.68 -32.45 339.03 -35.28Q337.38 -38.11 334.49 -39.71Q331.59 -41.3 327.82 -41.3Q324.28 -41.3 321.5 -39.65Q318.73 -38 317.02 -35.1Q315.31 -32.21 315.31 -28.56Q315.31 -24.31 317.26 -21.42Q319.2 -18.53 322.15 -17.17Q325.1 -15.81 327.94 -15.81Z M397.13 2.01Q391.59 2.01 386.1 -0.18Q380.61 -2.36 376.13 -6.37Q371.65 -10.38 369.05 -15.99Q366.45 -21.59 366.45 -28.44Q366.45 -34.81 368.81 -40.3Q371.17 -45.78 375.42 -50.03Q379.67 -54.28 385.16 -56.7Q390.64 -59.12 396.9 -59.12Q405.39 -59.12 412.3 -55.05Q419.2 -50.98 423.33 -44.01Q427.46 -37.05 427.46 -28.56Q427.46 -21.36 424.8 -15.75Q422.15 -10.15 417.73 -6.14Q413.3 -2.12 407.93 -0.06Q402.56 2.01 397.13 2.01ZM396.9 -15.81Q399.73 -15.81 402.68 -17.23Q405.63 -18.64 407.64 -21.48Q409.64 -24.31 409.64 -28.67Q409.64 -32.45 407.99 -35.28Q406.34 -38.11 403.45 -39.71Q400.56 -41.3 396.78 -41.3Q393.24 -41.3 390.47 -39.65Q387.69 -38 385.98 -35.1Q384.27 -32.21 384.27 -28.56Q384.27 -24.31 386.22 -21.42Q388.17 -18.53 391.12 -17.17Q394.07 -15.81 396.9 -15.81Z" transform="translate(383.91 163.36)" fill="url(#titleFill)"/></g>
+    <g class="rise2"><path d="M7.26 -22.43Q7.3 -22.82 7.3 -23.42Q7.3 -24.03 7.46 -24.48Q7.78 -25.38 8.51 -25.63Q9.6 -26.05 10.32 -25.5Q11.04 -24.96 11.2 -24Q11.2 -23.94 11.22 -23.71Q11.23 -23.49 11.25 -23.22Q11.26 -22.94 11.26 -22.7Q11.26 -22.46 11.26 -22.43H13.73Q14.85 -22.43 15.52 -22.29Q16.19 -22.14 16.64 -21.5Q16.77 -21.31 16.83 -20.98Q16.9 -20.64 16.85 -20.3Q16.8 -19.97 16.67 -19.68Q16.54 -19.39 16.35 -19.26Q16.1 -19.17 15.79 -19.06Q15.49 -18.94 15.23 -18.94Q14.85 -18.91 14.54 -18.93Q14.24 -18.94 13.86 -18.94Q13.28 -18.94 12.64 -18.93Q12 -18.91 11.55 -18.94Q11.55 -18.53 11.55 -18.45Q11.55 -18.37 11.55 -18.34Q11.55 -18.3 11.55 -18.16Q11.55 -18.02 11.55 -17.47Q11.71 -17.34 11.97 -16.96Q12.22 -16.58 12.48 -16.32Q12.61 -16.19 12.9 -15.9Q13.18 -15.62 13.5 -15.28Q13.82 -14.94 14.13 -14.64Q14.43 -14.34 14.59 -14.14Q14.82 -13.92 14.98 -13.73Q15.14 -13.54 15.3 -13.38Q15.84 -12.74 16.38 -12.03Q16.93 -11.33 17.12 -10.62Q17.18 -10.3 17.12 -9.95Q17.06 -9.6 16.77 -9.34Q16.29 -9.02 15.74 -9.02Q15.14 -9.02 14.58 -9.31Q14.02 -9.6 13.66 -9.89Q13.12 -10.37 12.67 -10.75Q12.22 -11.14 11.78 -11.62Q11.62 -11.81 11.26 -12.14Q10.91 -12.48 10.53 -12.85Q10.14 -13.22 9.81 -13.55Q9.47 -13.89 9.31 -14.11L5.18 -10.27Q4.67 -9.73 4.1 -9.52Q3.52 -9.31 3.01 -9.31Q2.85 -9.31 2.53 -9.38Q1.92 -9.54 1.7 -9.95Q1.5 -10.3 1.57 -10.75Q1.63 -11.2 1.82 -11.55Q2.05 -11.94 2.32 -12.26Q2.59 -12.58 2.88 -12.93Q3.3 -13.41 3.84 -13.98Q4.38 -14.56 4.96 -15.18Q5.54 -15.81 6.1 -16.4Q6.66 -16.99 7.1 -17.47V-18.94Q6.85 -18.91 6.18 -18.93Q5.5 -18.94 4.96 -18.94Q4.61 -18.94 4.16 -18.91Q3.71 -18.88 3.28 -18.94Q2.85 -19.01 2.5 -19.22Q2.14 -19.42 1.95 -19.9Q1.79 -20.26 1.76 -20.7Q1.73 -21.15 1.82 -21.54Q1.92 -21.98 2.32 -22.16Q2.72 -22.34 3.07 -22.4ZM24.67 -6.98Q24.74 -5.31 24.67 -3.71V-3.26Q24.67 -2.85 24.67 -2.35Q24.67 -1.86 24.59 -1.38Q24.51 -0.9 24.37 -0.45Q24.22 0 23.94 0.29Q23.46 0.7 22.88 0.7H22.82Q22.05 0.67 21.58 0.24Q21.12 -0.19 20.9 -0.8Q20.67 -1.41 20.61 -2.06Q20.54 -2.72 20.54 -3.23V-22.24Q20.54 -22.27 20.54 -22.54Q20.54 -22.82 20.59 -23.18Q20.64 -23.55 20.78 -23.95Q20.93 -24.35 21.18 -24.61Q21.44 -24.83 21.86 -24.94Q22.27 -25.06 22.62 -25.06Q23.36 -25.06 23.84 -24.58Q24.26 -24.13 24.35 -23.63Q24.45 -23.14 24.48 -22.59Q24.51 -22.5 24.51 -22.4Q24.51 -22.3 24.54 -22.18Q24.61 -21.66 24.61 -21.09Q24.61 -20.51 24.64 -19.94Q24.64 -19.58 24.66 -19.25Q24.67 -18.91 24.67 -18.56ZM3.52 -5.38Q3.58 -5.41 4.08 -5.39Q4.58 -5.38 5.2 -5.36Q5.82 -5.34 6.4 -5.33Q6.98 -5.31 7.17 -5.31Q7.2 -5.57 7.22 -6.24Q7.23 -6.91 7.26 -7.63Q7.3 -8.35 7.33 -8.94Q7.36 -9.54 7.39 -9.63Q7.52 -10.02 7.78 -10.29Q8.03 -10.56 8.38 -10.72Q8.74 -10.85 9.12 -10.85Q9.82 -10.85 10.42 -10.48Q11.01 -10.11 11.17 -9.54Q11.2 -9.41 11.23 -8.83Q11.26 -8.26 11.28 -7.55Q11.3 -6.85 11.3 -6.21Q11.3 -5.57 11.3 -5.34V-5.31H16.1Q17.15 -5.31 17.79 -4.93Q18.14 -4.7 18.34 -4.34Q18.53 -3.97 18.58 -3.55Q18.62 -3.14 18.54 -2.72Q18.46 -2.3 18.3 -2.02Q18.02 -1.5 17.47 -1.39Q16.93 -1.28 16.42 -1.28H3.14Q3.14 -1.28 2.94 -1.3Q2.75 -1.31 2.5 -1.36Q2.24 -1.41 1.95 -1.47Q1.66 -1.54 1.44 -1.63Q0.77 -1.98 0.61 -2.94Q0.54 -3.46 0.69 -3.9Q0.83 -4.35 1.15 -4.64Q1.73 -5.12 2.35 -5.25Q2.98 -5.38 3.52 -5.38Z M33.14 -11.01Q32.88 -11.01 32.61 -11.04Q32.34 -11.07 32.08 -11.14Q31.82 -11.14 31.58 -11.23Q31.34 -11.33 31.15 -11.39Q30.77 -11.55 30.45 -11.94Q30.29 -12.16 30.19 -12.45Q30.1 -12.74 30.03 -13.06Q29.97 -13.41 29.94 -13.71Q29.9 -14.02 29.9 -14.34Q29.84 -14.62 29.84 -14.86Q29.84 -15.1 29.84 -15.33V-17.34Q29.84 -17.57 29.87 -17.82Q29.9 -18.08 29.9 -18.37V-21.95Q29.9 -22.05 29.9 -22.19Q29.9 -22.34 29.97 -22.5Q29.97 -22.66 30 -22.8Q30.03 -22.94 30.03 -23.07Q30.1 -23.23 30.14 -23.38Q30.19 -23.52 30.26 -23.65Q30.54 -24.06 30.86 -24.26Q31.02 -24.42 31.22 -24.48Q31.41 -24.54 31.66 -24.61Q31.73 -24.61 31.86 -24.64Q31.98 -24.67 32.14 -24.67H32.78Q32.98 -24.7 33.14 -24.7Q33.3 -24.7 33.49 -24.7H40.56Q41.2 -24.7 42.03 -24.61Q42.86 -24.51 43.44 -24.13Q43.95 -23.81 44.14 -23.36Q44.24 -23.1 44.3 -22.9Q44.37 -22.69 44.43 -22.37Q44.43 -22.11 44.45 -21.86Q44.46 -21.6 44.43 -21.38V-20.32Q44.43 -20.06 44.45 -19.82Q44.46 -19.58 44.4 -19.33Q44.4 -19.2 44.4 -18.91Q44.4 -18.62 44.42 -18.3Q44.43 -17.98 44.43 -17.71Q44.43 -17.44 44.43 -17.31V-14.91Q44.5 -14.72 44.46 -14.53Q44.43 -14.34 44.43 -14.11Q44.43 -13.92 44.38 -13.71Q44.34 -13.5 44.34 -13.28Q44.34 -12.9 44.14 -12.48Q44.05 -12.13 43.73 -11.74Q43.54 -11.42 43.12 -11.36Q42.7 -11.14 42.26 -11.07Q41.81 -11.01 41.36 -11.01H39.54Q39.44 -11.01 39.2 -10.98Q38.96 -10.94 38.51 -10.94Q38.1 -10.94 37.86 -10.98Q37.62 -11.01 37.14 -11.01ZM52.59 -2.27Q52.69 -2.11 52.78 -1.97Q52.88 -1.82 52.88 -1.66Q53.07 -0.48 52.46 0.22Q52.27 0.48 52.06 0.59Q51.86 0.7 51.6 0.77Q51.38 0.83 51.28 0.86Q51.18 0.9 51.12 0.9H35.34Q34.03 0.9 33.33 0.48Q32.59 0.13 32.59 -0.67V-5.18Q32.59 -5.28 32.56 -5.39Q32.53 -5.5 32.53 -5.66V-6.94Q32.53 -7.1 32.56 -7.22Q32.59 -7.33 32.59 -7.42Q32.59 -8.1 33.17 -8.48Q33.74 -8.96 34.51 -8.96Q34.58 -8.96 34.67 -8.96Q34.77 -8.96 34.93 -8.9Q35.02 -8.9 35.14 -8.9Q35.25 -8.9 35.34 -8.83Q35.73 -8.74 36.05 -8.42Q36.11 -8.26 36.21 -8.08Q36.3 -7.9 36.43 -7.71Q36.5 -7.55 36.53 -7.34Q36.56 -7.14 36.56 -6.88Q36.56 -6.66 36.59 -6.48Q36.62 -6.3 36.62 -6.08V-2.98Q36.69 -2.98 36.83 -2.98Q36.98 -2.98 37.17 -2.91Q37.39 -2.91 37.78 -2.88Q38.16 -2.85 38.8 -2.85Q39.31 -2.85 39.79 -2.88Q40.27 -2.91 40.69 -2.91H51.44Q51.66 -2.85 51.82 -2.78Q51.98 -2.72 52.14 -2.62Q52.24 -2.56 52.37 -2.48Q52.5 -2.4 52.59 -2.27ZM48.82 -10.24Q48.66 -10.5 48.59 -10.77Q48.53 -11.04 48.46 -11.36Q48.37 -11.94 48.38 -12.54Q48.4 -13.15 48.4 -13.76V-16.45Q48.46 -16.9 48.46 -17.3Q48.46 -17.7 48.46 -18.14V-21.82Q48.4 -22.02 48.4 -22.22Q48.4 -22.43 48.4 -22.62Q48.46 -22.85 48.46 -22.99Q48.46 -23.14 48.53 -23.36Q48.62 -23.87 49.14 -24.38Q49.39 -24.74 49.81 -24.83Q50.06 -24.96 50.32 -24.98Q50.58 -24.99 50.9 -24.93Q51.34 -24.86 51.68 -24.67Q52.02 -24.48 52.18 -24.13Q52.43 -23.68 52.34 -23.04V-11.36Q52.27 -11.14 52.22 -10.94Q52.18 -10.75 52.11 -10.59Q52.05 -10.43 52 -10.29Q51.95 -10.14 51.82 -9.98Q51.66 -9.7 51.28 -9.54Q51.12 -9.38 50.88 -9.31Q50.64 -9.25 50.42 -9.25Q49.87 -9.25 49.36 -9.6Q49.01 -9.86 48.82 -10.24ZM33.78 -16.74Q33.78 -16.51 33.81 -16.38Q33.84 -16.26 33.84 -16.1Q33.84 -15.97 33.84 -15.84Q33.84 -15.71 33.9 -15.58Q33.97 -15.33 34.13 -15.1Q34.42 -14.82 34.99 -14.72H38.67Q38.83 -14.72 38.94 -14.72Q39.06 -14.72 39.22 -14.66Q39.38 -14.66 39.5 -14.66Q39.63 -14.66 39.73 -14.72Q39.98 -14.72 40.08 -14.91Q40.21 -15.04 40.27 -15.2Q40.27 -15.36 40.3 -15.46Q40.34 -15.55 40.34 -15.68Q40.5 -16.38 40.5 -17.02V-19.1Q40.43 -19.26 40.43 -19.68Q40.5 -19.74 40.46 -19.87Q40.43 -20 40.43 -20.13Q40.18 -20.54 39.95 -20.54Q39.82 -20.61 39.7 -20.61Q39.57 -20.61 39.41 -20.61L35.73 -20.67H35.18Q34.83 -20.67 34.74 -20.61Q34.29 -20.61 33.97 -20.19Q33.84 -20.06 33.84 -19.71V-17.98Q33.84 -17.89 33.81 -17.74Q33.78 -17.6 33.78 -17.5Z M76.9 -18.05Q77.5 -17.79 78.08 -17.41Q78.66 -17.02 79.17 -16.61Q79.42 -16.38 79.52 -16.03Q79.62 -15.68 79.54 -15.34Q79.46 -15.01 79.22 -14.74Q78.98 -14.46 78.59 -14.4Q77.57 -14.18 76.46 -14.42Q75.36 -14.66 74.43 -15.07Q73.57 -15.46 72.83 -15.81Q72.1 -16.16 71.36 -16.58Q71.14 -16.7 70.77 -16.9Q70.4 -17.09 70.05 -17.28Q69.63 -17.5 69.15 -17.73Q68.61 -17.47 68.1 -17.25Q67.65 -17.06 67.22 -16.86Q66.78 -16.67 66.53 -16.54Q65.7 -16.1 64.99 -15.79Q64.29 -15.49 63.46 -15.1Q62.82 -14.85 62.16 -14.51Q61.5 -14.18 60.77 -14.24Q60.19 -14.27 59.65 -14.53Q59.1 -14.78 58.98 -15.42Q58.94 -15.74 59.04 -16.16Q59.17 -16.61 59.47 -16.93Q59.78 -17.25 60.22 -17.5L62.43 -18.59Q62.98 -18.88 63.39 -19.07Q63.81 -19.26 64.38 -19.52Q64.93 -19.81 65.65 -20.16Q66.37 -20.51 67.01 -20.74V-21.73H63.62Q63.1 -21.73 62.74 -21.71Q62.37 -21.7 61.89 -21.76Q61.54 -21.82 61.12 -21.82Q60.7 -21.82 60.35 -21.98Q60 -22.18 59.78 -22.59Q59.58 -22.91 59.55 -23.31Q59.52 -23.71 59.68 -24.06Q59.94 -24.58 60.51 -24.83Q61.09 -25.09 61.7 -25.09H62.43Q62.94 -25.06 63.18 -25.07Q63.42 -25.09 63.94 -25.09H75.01Q75.52 -25.09 76.19 -25.12Q76.86 -25.15 77.49 -25.04Q78.11 -24.93 78.61 -24.61Q79.1 -24.29 79.26 -23.62Q79.46 -22.85 78.99 -22.43Q78.53 -22.02 77.81 -21.84Q77.09 -21.66 76.29 -21.65Q75.49 -21.63 74.98 -21.66Q74.46 -21.7 73.9 -21.7Q73.34 -21.7 72.83 -21.7Q72.26 -21.7 71.68 -21.66V-20.67Q71.87 -20.58 72.08 -20.46Q72.29 -20.35 72.51 -20.29Q72.7 -20.19 72.88 -20.1Q73.06 -20 73.25 -19.9Q73.57 -19.74 73.87 -19.6Q74.18 -19.46 74.5 -19.3Q75.1 -19.01 75.7 -18.69Q76.29 -18.37 76.9 -18.05ZM78.02 -9.22Q76.42 -9.15 74.91 -9.12Q73.41 -9.09 71.78 -9.09Q71.74 -8.42 71.71 -7.89Q71.68 -7.36 71.68 -6.46Q71.62 -6.11 71.38 -5.86Q71.14 -5.6 70.82 -5.41Q70.5 -5.22 70.13 -5.14Q69.76 -5.06 69.44 -5.06Q68.48 -5.12 67.95 -5.54Q67.42 -5.95 67.33 -6.91Q67.26 -7.55 67.31 -8.03Q67.36 -8.51 67.36 -9.15Q66.62 -9.15 65.46 -9.17Q64.29 -9.18 63.04 -9.2Q61.79 -9.22 60.64 -9.25Q59.49 -9.28 58.82 -9.34Q58.3 -9.41 58 -9.49Q57.7 -9.57 57.28 -9.95Q57.06 -10.14 56.96 -10.46Q56.86 -10.78 56.86 -11.14Q56.86 -11.81 57.28 -12.22Q57.5 -12.48 57.89 -12.61Q58.27 -12.74 58.62 -12.8Q58.98 -12.86 59.25 -12.86Q59.52 -12.86 59.55 -12.86H77.86Q78.34 -12.86 78.82 -12.86Q79.3 -12.86 79.74 -12.83Q80.19 -12.8 80.62 -12.7Q81.06 -12.61 81.41 -12.29Q81.76 -12.03 81.81 -11.71Q81.86 -11.39 81.86 -11.01Q81.86 -10.53 81.58 -10.14Q81.31 -9.76 80.83 -9.6Q80.19 -9.34 79.44 -9.3Q78.69 -9.25 78.02 -9.22ZM78.91 -3.17Q78.94 -3.17 79.14 -3.1Q79.33 -3.04 79.57 -2.9Q79.81 -2.75 80.02 -2.51Q80.22 -2.27 80.29 -1.95Q80.48 -0.74 79.9 -0.06Q79.55 0.38 79.14 0.48Q78.72 0.58 78.69 0.58H61.22Q60 0.58 59.3 0.18Q58.59 -0.22 58.59 -0.96V-3.81Q58.53 -4.51 58.59 -5.25Q58.66 -5.92 59.1 -6.34Q59.55 -6.75 60.22 -6.75Q60.38 -6.75 60.66 -6.74Q60.93 -6.72 61.09 -6.66Q61.5 -6.53 61.73 -6.27Q61.95 -6.02 62.08 -5.68Q62.21 -5.34 62.24 -4.98Q62.27 -4.61 62.3 -4.26Q62.3 -4 62.34 -3.73Q62.37 -3.46 62.43 -3.23Q62.5 -3.2 63.02 -3.15Q63.55 -3.1 64.67 -3.1Q65.63 -3.1 66.38 -3.14Q67.14 -3.17 67.17 -3.17Z M88.34 -10.98Q87.06 -11.87 86.51 -13.54Q86.19 -14.37 86.08 -15.14Q85.97 -15.9 85.97 -16.7Q85.97 -17.54 86.11 -18.26Q86.26 -18.98 86.51 -19.68Q86.83 -20.35 87.2 -20.94Q87.57 -21.54 88.08 -21.98Q88.59 -22.53 89.15 -22.91Q89.71 -23.3 90.45 -23.55Q91.09 -23.87 91.84 -24.02Q92.59 -24.16 93.42 -24.16Q94 -24.26 94.54 -24.16Q94.8 -24.16 95.1 -24.13Q95.41 -24.1 95.66 -24.03Q95.79 -23.97 95.94 -23.97Q96.08 -23.97 96.24 -23.9Q96.4 -23.9 96.54 -23.86Q96.69 -23.81 96.78 -23.74Q97.14 -23.65 97.44 -23.54Q97.74 -23.42 98.06 -23.26Q98.61 -23.01 99.15 -22.69Q99.34 -22.59 99.58 -22.4Q99.82 -22.21 100.05 -21.98Q100.62 -21.41 100.98 -20.8Q101.17 -20.48 101.31 -20.13Q101.46 -19.78 101.52 -19.36Q101.62 -19.01 101.68 -18.64Q101.74 -18.27 101.81 -17.92Q101.87 -17.57 101.9 -17.22Q101.94 -16.86 101.87 -16.45Q101.87 -16.26 101.84 -16.02Q101.81 -15.78 101.81 -15.58Q101.74 -15.33 101.71 -15.07Q101.68 -14.82 101.58 -14.62Q101.39 -13.38 100.78 -12.32Q100.43 -11.78 100 -11.36Q99.57 -10.94 99.02 -10.56Q98.61 -10.3 98.19 -10.11Q97.78 -9.92 97.33 -9.82Q96.91 -9.7 96.48 -9.62Q96.05 -9.54 95.6 -9.44Q95.44 -9.38 95.28 -9.38Q95.12 -9.38 94.96 -9.38Q94.86 -9.38 94.72 -9.38Q94.58 -9.38 94.42 -9.31H93.84Q93.71 -9.31 93.57 -9.31Q93.42 -9.31 93.26 -9.38Q93.07 -9.38 92.86 -9.38Q92.66 -9.38 92.46 -9.44Q92.21 -9.44 92 -9.47Q91.79 -9.5 91.57 -9.5Q90.7 -9.63 89.9 -10.02Q89.46 -10.24 89.07 -10.45Q88.69 -10.66 88.34 -10.98ZM108.98 -18.46Q109.04 -17.82 109.04 -17.15Q109.04 -16.48 109.04 -15.74V-10.56Q109.04 -9.82 109.04 -9.18Q109.04 -8.54 108.98 -7.94V-4.29Q108.91 -3.78 108.94 -3.28Q108.98 -2.78 108.98 -2.34Q108.98 -2.02 108.98 -1.73Q108.98 -1.44 108.91 -1.18Q108.91 -0.67 108.69 -0.35Q108.62 -0.19 108.56 -0.08Q108.5 0.03 108.43 0.19Q108.3 0.29 108.18 0.42Q108.05 0.54 107.79 0.64Q107.5 0.86 107.12 0.93Q106.74 0.99 106.32 0.93Q105.78 0.8 105.52 0.51Q105.26 0.35 105.04 -0.16Q104.94 -0.38 104.88 -0.58Q104.82 -0.77 104.82 -0.99Q104.75 -1.15 104.72 -1.31Q104.69 -1.47 104.69 -1.57V-1.92L104.62 -20.9Q104.62 -21.31 104.64 -21.73Q104.66 -22.14 104.75 -22.66Q104.85 -23.52 105.33 -24.06Q105.78 -24.38 106.03 -24.48Q106.26 -24.54 106.46 -24.54Q106.67 -24.54 106.93 -24.54Q107.18 -24.54 107.44 -24.48Q107.7 -24.42 107.95 -24.26Q108.37 -23.94 108.56 -23.46Q108.72 -23.1 108.82 -22.75Q108.91 -22.4 108.91 -22.05Q108.91 -21.7 108.91 -21.3Q108.91 -20.9 108.98 -20.54ZM101.94 -5.79Q102.35 -5.66 102.67 -5.44Q102.99 -5.12 103.17 -4.8Q103.34 -4.48 103.34 -4.1Q103.34 -3.55 102.99 -3.14Q102.67 -2.72 102.29 -2.59Q102.13 -2.53 101.97 -2.5Q101.81 -2.46 101.65 -2.46Q101.46 -2.4 101.3 -2.4Q101.14 -2.4 100.98 -2.4H97.94Q97.39 -2.4 96.83 -2.4Q96.27 -2.4 95.66 -2.34H93.42Q92.85 -2.4 92.4 -2.4Q91.95 -2.4 91.5 -2.4H88.14Q87.82 -2.4 87.54 -2.43Q87.25 -2.46 86.93 -2.53Q86.77 -2.59 86.62 -2.64Q86.48 -2.69 86.32 -2.75Q86.03 -2.85 85.78 -3.04Q85.58 -3.26 85.47 -3.54Q85.36 -3.81 85.36 -4.22Q85.36 -4.83 85.78 -5.31Q85.97 -5.6 86.38 -5.7Q86.58 -5.76 86.77 -5.81Q86.96 -5.86 87.12 -5.92Q87.34 -5.98 87.47 -5.98Q87.6 -5.98 87.73 -5.98H99.82Q100.14 -5.98 100.43 -5.98Q100.72 -5.98 100.98 -5.92Q101.23 -5.92 101.46 -5.89Q101.68 -5.86 101.94 -5.79ZM90.22 -17.28Q90.13 -16.67 90.22 -16Q90.38 -15.23 90.64 -14.75Q91.28 -13.76 92.53 -13.28Q92.98 -13.12 93.44 -13.06Q93.9 -12.99 94.35 -12.99Q94.61 -13.06 94.83 -13.06Q95.06 -13.06 95.31 -13.12Q95.54 -13.12 95.74 -13.22Q95.95 -13.31 96.18 -13.41Q96.78 -13.7 97.2 -14.37Q97.42 -14.72 97.52 -15.04Q97.62 -15.36 97.71 -15.71Q97.84 -16.26 97.79 -16.74Q97.74 -17.22 97.58 -17.76Q97.52 -17.98 97.41 -18.19Q97.3 -18.4 97.2 -18.56Q97.1 -18.66 97.04 -18.77Q96.98 -18.88 96.85 -18.94Q96.75 -19.17 96.46 -19.36Q96.21 -19.52 95.95 -19.62Q95.82 -19.71 95.68 -19.78Q95.54 -19.84 95.38 -19.9Q94.54 -20.1 93.68 -20.1Q93.26 -20.1 92.88 -20.03Q92.5 -19.97 92.14 -19.81Q91.79 -19.65 91.47 -19.44Q91.15 -19.23 90.9 -18.88Q90.64 -18.56 90.5 -18.16Q90.35 -17.76 90.22 -17.28Z M134.96 -20.7Q134.96 -20.7 134.94 -20.32Q134.93 -19.94 134.93 -19.46Q134.93 -18.98 134.94 -18.56Q134.96 -18.14 134.96 -18.08Q135.12 -17.92 135.54 -17.55Q135.95 -17.18 136.24 -16.93Q136.56 -16.67 136.9 -16.37Q137.23 -16.06 137.58 -15.71Q137.81 -15.49 138 -15.28Q138.19 -15.07 138.35 -14.91Q138.96 -14.3 139.57 -13.6Q140.18 -12.9 140.4 -12.16Q140.5 -11.87 140.43 -11.52Q140.37 -11.17 140.02 -10.91Q139.47 -10.59 138.86 -10.59Q138.16 -10.59 137.52 -10.88Q136.88 -11.17 136.5 -11.46Q135.89 -11.9 135.38 -12.4Q134.86 -12.9 134.35 -13.41Q134 -13.76 133.55 -14.22Q133.1 -14.69 132.66 -15.04L131.79 -14.18Q131.57 -13.95 131.34 -13.74Q131.12 -13.54 130.93 -13.31Q130.51 -12.86 130.06 -12.4Q129.62 -11.94 129.04 -11.52Q127.73 -10.56 126.58 -10.56Q126.42 -10.56 126.3 -10.56Q126.19 -10.56 126.03 -10.62Q125.33 -10.78 125.1 -11.2Q124.88 -11.55 124.96 -12Q125.04 -12.45 125.23 -12.8Q125.49 -13.15 125.81 -13.49Q126.13 -13.82 126.45 -14.18Q126.74 -14.5 127.36 -15.09Q127.98 -15.68 128.62 -16.3Q129.26 -16.93 129.81 -17.44Q130.35 -17.95 130.48 -18.08V-20.7H128.43Q128.05 -20.7 127.54 -20.69Q127.02 -20.67 126.53 -20.74Q126.03 -20.8 125.62 -21.01Q125.2 -21.22 125.01 -21.7Q124.85 -22.05 124.8 -22.5Q124.75 -22.94 124.85 -23.33Q124.98 -23.78 125.42 -23.95Q125.87 -24.13 126.29 -24.19Q126.35 -24.19 126.82 -24.19Q127.28 -24.19 127.82 -24.19Q128.37 -24.19 128.85 -24.19Q129.33 -24.19 129.42 -24.22H136.91Q138.19 -24.22 139.07 -24.06Q139.95 -23.9 140.5 -23.26Q140.66 -23.07 140.7 -22.75Q140.75 -22.43 140.7 -22.1Q140.66 -21.76 140.51 -21.47Q140.37 -21.18 140.11 -21.06Q139.86 -20.96 139.5 -20.85Q139.15 -20.74 138.9 -20.7Q138.45 -20.67 137.98 -20.69Q137.52 -20.7 137.07 -20.7ZM145.26 -7.84Q146.61 -7.84 147.23 -7.26Q147.86 -6.69 147.86 -5.95V-4.13Q147.86 -4.03 147.86 -3.66Q147.86 -3.3 147.86 -2.88Q147.86 -2.46 147.87 -2.11Q147.89 -1.76 147.89 -1.66Q147.89 -1.31 147.89 -0.96Q147.89 -0.61 147.86 -0.26Q147.79 0.42 147.33 0.83Q146.86 1.25 146.13 1.25Q145.97 1.25 145.57 1.23Q145.17 1.22 145.01 1.15Q144.56 1.02 144.32 0.77Q144.08 0.51 143.95 0.19Q143.82 -0.13 143.79 -0.5Q143.76 -0.86 143.73 -1.22Q143.73 -1.34 143.73 -1.76Q143.73 -2.18 143.71 -2.64Q143.7 -3.1 143.66 -3.5Q143.63 -3.9 143.6 -4.03Q143.5 -4.06 143.09 -4.1Q142.67 -4.13 141.46 -4.13Q140.43 -4.13 140.19 -4.11Q139.95 -4.1 139.92 -4.1H128.37Q128.34 -4.1 128.13 -4.16Q127.92 -4.22 127.66 -4.37Q127.41 -4.51 127.18 -4.74Q126.96 -4.96 126.93 -5.28Q126.74 -6.53 127.31 -7.2Q127.7 -7.65 128.14 -7.73Q128.59 -7.81 128.62 -7.84ZM147.82 -15.04V-12.13Q147.79 -11.78 147.73 -11.41Q147.66 -11.04 147.47 -10.69Q147.28 -10.3 146.93 -10.05Q146.67 -9.89 146.34 -9.81Q146 -9.73 145.74 -9.73Q145.49 -9.73 145.2 -9.78Q144.91 -9.82 144.72 -9.95Q144.4 -10.14 144.21 -10.43Q144.02 -10.72 143.9 -10.99Q143.79 -11.26 143.76 -11.47Q143.73 -11.68 143.73 -11.68V-22.24Q143.7 -22.37 143.76 -22.94Q143.82 -23.52 144.02 -23.9Q144.18 -24.22 144.58 -24.42Q144.98 -24.61 145.42 -24.67Q145.97 -24.74 146.51 -24.61Q147.06 -24.48 147.31 -24.19Q147.5 -23.94 147.58 -23.7Q147.66 -23.46 147.73 -23.2Q147.82 -22.88 147.84 -22.53Q147.86 -22.18 147.82 -21.82V-19.62V-19.33Q147.82 -19.17 147.81 -18.99Q147.79 -18.82 147.82 -18.59Q147.95 -18.59 148.3 -18.58Q148.66 -18.56 149.04 -18.54Q149.42 -18.53 149.78 -18.5Q150.13 -18.46 150.29 -18.43Q150.93 -18.3 151.18 -18.06Q151.44 -17.82 151.5 -17.47Q151.6 -17.12 151.6 -16.66Q151.6 -16.19 151.41 -15.87Q151.02 -15.23 150.26 -15.15Q149.49 -15.07 148.56 -15.04Z M166.08 -14.05Q163.78 -14.05 161.78 -14.26Q159.78 -14.46 158.32 -15.07Q156.86 -15.68 156.03 -16.78Q155.2 -17.89 155.2 -19.65Q155.2 -21.25 156.03 -22.32Q156.86 -23.39 158.32 -24.05Q159.78 -24.7 161.78 -24.98Q163.78 -25.25 166.08 -25.25Q168.38 -25.25 170.38 -25.04Q172.38 -24.83 173.84 -24.24Q175.3 -23.65 176.13 -22.54Q176.96 -21.44 176.96 -19.65Q176.96 -17.89 176.13 -16.78Q175.3 -15.68 173.84 -15.07Q172.38 -14.46 170.38 -14.26Q168.38 -14.05 166.08 -14.05ZM175.55 -2.82Q175.58 -2.82 175.78 -2.75Q175.97 -2.69 176.21 -2.54Q176.45 -2.4 176.66 -2.16Q176.86 -1.92 176.93 -1.6Q177.12 -0.38 176.54 0.29Q176.19 0.74 175.78 0.83Q175.36 0.93 175.33 0.93H157.86Q156.64 0.93 155.94 0.53Q155.23 0.13 155.23 -0.61V-3.46Q155.17 -4.16 155.23 -4.9Q155.3 -5.57 155.74 -5.98Q156.19 -6.4 156.86 -6.4Q157.02 -6.4 157.3 -6.38Q157.57 -6.37 157.73 -6.3Q158.14 -6.18 158.37 -5.92Q158.59 -5.66 158.72 -5.33Q158.85 -4.99 158.88 -4.62Q158.91 -4.26 158.94 -3.9Q158.94 -3.65 158.98 -3.38Q159.01 -3.1 159.07 -2.88Q159.14 -2.85 159.66 -2.8Q160.19 -2.75 161.31 -2.75Q162.27 -2.75 163.02 -2.78Q163.78 -2.82 163.81 -2.82ZM174.56 -11.97Q175.1 -11.97 175.73 -11.98Q176.35 -12 176.88 -11.86Q177.41 -11.71 177.74 -11.3Q178.08 -10.88 178.08 -10.02Q178.08 -9.25 177.44 -8.67Q176.93 -8.22 176.21 -8.18Q175.49 -8.13 174.85 -8.16Q174.69 -8.19 174.56 -8.19Q174.43 -8.19 174.27 -8.19H156.64Q156.61 -8.19 156.35 -8.19Q156.1 -8.19 155.76 -8.26Q155.42 -8.32 155.07 -8.43Q154.72 -8.54 154.5 -8.8Q154.11 -9.22 154.11 -9.92Q154.11 -10.59 154.53 -11.01Q154.94 -11.39 155.39 -11.65Q155.84 -11.9 156.32 -11.97Q156.42 -11.97 156.51 -11.95Q156.61 -11.94 156.7 -11.97Q157.15 -12.03 157.66 -11.98Q158.18 -11.94 158.72 -11.97Q160.38 -12.03 162.1 -12Q163.81 -11.97 165.66 -11.97Q167.68 -11.97 169.95 -12Q172.22 -12.03 174.4 -11.97ZM166.08 -21.66Q164.9 -21.66 163.73 -21.58Q162.56 -21.5 161.63 -21.28Q160.7 -21.06 160.13 -20.66Q159.55 -20.26 159.55 -19.65Q159.55 -18.56 161.3 -18.03Q163.04 -17.5 166.08 -17.57Q167.26 -17.57 168.43 -17.63Q169.6 -17.7 170.53 -17.9Q171.46 -18.11 172.03 -18.53Q172.61 -18.94 172.61 -19.65Q172.61 -20.26 172.03 -20.66Q171.46 -21.06 170.53 -21.28Q169.6 -21.5 168.43 -21.58Q167.26 -21.66 166.08 -21.66Z M204.93 -14.05Q202.62 -14.05 200.62 -14.26Q198.62 -14.46 197.17 -15.07Q195.71 -15.68 194.88 -16.78Q194.05 -17.89 194.05 -19.65Q194.05 -21.25 194.88 -22.32Q195.71 -23.39 197.17 -24.05Q198.62 -24.7 200.62 -24.98Q202.62 -25.25 204.93 -25.25Q207.23 -25.25 209.23 -25.04Q211.23 -24.83 212.69 -24.24Q214.14 -23.65 214.98 -22.54Q215.81 -21.44 215.81 -19.65Q215.81 -17.89 214.98 -16.78Q214.14 -15.68 212.69 -15.07Q211.23 -14.46 209.23 -14.26Q207.23 -14.05 204.93 -14.05ZM214.4 -2.82Q214.43 -2.82 214.62 -2.75Q214.82 -2.69 215.06 -2.54Q215.3 -2.4 215.5 -2.16Q215.71 -1.92 215.78 -1.6Q215.97 -0.38 215.39 0.29Q215.04 0.74 214.62 0.83Q214.21 0.93 214.18 0.93H196.7Q195.49 0.93 194.78 0.53Q194.08 0.13 194.08 -0.61V-3.46Q194.02 -4.16 194.08 -4.9Q194.14 -5.57 194.59 -5.98Q195.04 -6.4 195.71 -6.4Q195.87 -6.4 196.14 -6.38Q196.42 -6.37 196.58 -6.3Q196.99 -6.18 197.22 -5.92Q197.44 -5.66 197.57 -5.33Q197.7 -4.99 197.73 -4.62Q197.76 -4.26 197.79 -3.9Q197.79 -3.65 197.82 -3.38Q197.86 -3.1 197.92 -2.88Q197.98 -2.85 198.51 -2.8Q199.04 -2.75 200.16 -2.75Q201.12 -2.75 201.87 -2.78Q202.62 -2.82 202.66 -2.82ZM213.41 -11.97Q213.95 -11.97 214.58 -11.98Q215.2 -12 215.73 -11.86Q216.26 -11.71 216.59 -11.3Q216.93 -10.88 216.93 -10.02Q216.93 -9.25 216.29 -8.67Q215.78 -8.22 215.06 -8.18Q214.34 -8.13 213.7 -8.16Q213.54 -8.19 213.41 -8.19Q213.28 -8.19 213.12 -8.19H195.49Q195.46 -8.19 195.2 -8.19Q194.94 -8.19 194.61 -8.26Q194.27 -8.32 193.92 -8.43Q193.57 -8.54 193.34 -8.8Q192.96 -9.22 192.96 -9.92Q192.96 -10.59 193.38 -11.01Q193.79 -11.39 194.24 -11.65Q194.69 -11.9 195.17 -11.97Q195.26 -11.97 195.36 -11.95Q195.46 -11.94 195.55 -11.97Q196 -12.03 196.51 -11.98Q197.02 -11.94 197.57 -11.97Q199.23 -12.03 200.94 -12Q202.66 -11.97 204.51 -11.97Q206.53 -11.97 208.8 -12Q211.07 -12.03 213.25 -11.97ZM204.93 -21.66Q203.74 -21.66 202.58 -21.58Q201.41 -21.5 200.48 -21.28Q199.55 -21.06 198.98 -20.66Q198.4 -20.26 198.4 -19.65Q198.4 -18.56 200.14 -18.03Q201.89 -17.5 204.93 -17.57Q206.11 -17.57 207.28 -17.63Q208.45 -17.7 209.38 -17.9Q210.3 -18.11 210.88 -18.53Q211.46 -18.94 211.46 -19.65Q211.46 -20.26 210.88 -20.66Q210.3 -21.06 209.38 -21.28Q208.45 -21.5 207.28 -21.58Q206.11 -21.66 204.93 -21.66Z M228.4 -16.9Q230.13 -16.83 231.31 -16.06Q232.5 -15.3 233.23 -14.08Q233.97 -12.86 234.26 -11.33Q234.54 -9.79 234.5 -8.22Q234.45 -6.66 234.05 -5.15Q233.65 -3.65 233.01 -2.5Q232.3 -1.25 231.04 -0.59Q229.78 0.06 228.34 0.16Q226.9 0.26 225.5 -0.22Q224.11 -0.7 223.15 -1.73Q222.32 -2.62 221.97 -3.6Q221.62 -4.58 221.46 -5.76Q221.3 -6.94 221.2 -8.05Q221.1 -9.15 221.17 -10.24Q221.23 -11.33 221.54 -12.38Q221.84 -13.44 222.48 -14.5Q222.83 -15.1 223.47 -15.57Q224.11 -16.03 224.91 -16.34Q225.71 -16.64 226.62 -16.78Q227.54 -16.93 228.4 -16.9ZM243.38 -14.56Q243.54 -14.56 243.68 -14.53Q243.82 -14.5 243.98 -14.5Q244.14 -14.46 244.34 -14.45Q244.53 -14.43 244.72 -14.4Q245.07 -14.34 245.42 -14.16Q245.78 -13.98 245.94 -13.63Q246.16 -13.28 246.16 -12.8Q246.16 -12.54 246.14 -12.34Q246.13 -12.13 246.06 -11.87Q246 -11.62 245.92 -11.33Q245.84 -11.04 245.62 -10.88Q245.17 -10.56 244.75 -10.46Q244.24 -10.4 243.5 -10.43Q242.77 -10.46 242.26 -10.43Q242.22 -10.43 242.19 -10.4H242.16L242.13 -10.37V-10.27Q242.1 -9.47 242.11 -8.42Q242.13 -7.36 242.13 -6.53Q242.19 -4.86 242.13 -3.26V-2.82Q242.13 -2.4 242.11 -1.9Q242.1 -1.41 242.03 -0.93Q241.97 -0.45 241.81 -0.02Q241.65 0.42 241.36 0.7Q240.98 1.15 240.34 1.15Q240.34 1.15 240.27 1.12Q239.5 1.09 239.04 0.67Q238.58 0.26 238.34 -0.35Q238.1 -0.96 238.03 -1.62Q237.97 -2.27 237.97 -2.78V-21.79Q237.97 -21.82 237.97 -22.1Q237.97 -22.37 238.03 -22.74Q238.1 -23.1 238.24 -23.5Q238.38 -23.9 238.64 -24.16Q238.86 -24.38 239.3 -24.5Q239.73 -24.61 240.08 -24.61Q240.78 -24.61 241.26 -24.13Q241.71 -23.68 241.79 -23.18Q241.87 -22.69 241.94 -22.14Q241.97 -22.02 241.97 -21.76Q242.03 -21.22 242.05 -20.64Q242.06 -20.06 242.1 -19.49Q242.1 -19.14 242.11 -18.8Q242.13 -18.46 242.13 -18.11Q242.1 -17.92 242.11 -17.74Q242.13 -17.57 242.13 -17.41V-15.33Q242.13 -15.17 242.13 -14.98Q242.13 -14.78 242.19 -14.62Q242.19 -14.59 242.51 -14.59Q242.83 -14.59 242.86 -14.59Q243.15 -14.53 243.31 -14.56ZM232.88 -22.02Q233.52 -22.02 234.16 -21.82Q234.8 -21.63 235.15 -20.99Q235.38 -20.58 235.31 -19.95Q235.25 -19.33 234.93 -18.91Q234.61 -18.53 233.94 -18.37Q233.26 -18.21 232.53 -18.16Q231.79 -18.11 231.17 -18.14Q230.54 -18.18 230.32 -18.18Q230.06 -18.14 229.82 -18.14Q229.58 -18.14 229.3 -18.14H228.27Q228.02 -18.18 227.78 -18.18Q227.54 -18.18 227.28 -18.18L223.5 -18.24Q221.87 -18.24 221.17 -18.66Q220.46 -19.07 220.34 -19.97Q220.21 -20.9 220.82 -21.47Q221.26 -21.86 221.57 -21.95Q221.87 -22.05 222.35 -22.05Q222.48 -22.05 222.61 -22.03Q222.74 -22.02 222.86 -22.02H223.66Q224.11 -22.02 224.72 -22.03Q225.33 -22.05 225.78 -22.08Q225.78 -22.21 225.79 -22.45Q225.81 -22.69 225.82 -22.94Q225.84 -23.2 225.86 -23.44Q225.87 -23.68 225.87 -23.78Q225.94 -24.32 226.22 -24.77Q226.9 -25.7 227.89 -25.63Q228.34 -25.57 228.78 -25.49Q229.23 -25.41 229.52 -25.02Q229.87 -24.51 229.86 -23.63Q229.84 -22.75 229.9 -22.05H230.83Q231.09 -22.05 231.57 -22.03Q232.05 -22.02 232.3 -22.02ZM228.27 -3.36Q228.98 -3.46 229.49 -3.92Q230 -4.38 230.32 -5.02Q230.64 -5.66 230.77 -6.4Q230.9 -7.14 230.9 -7.78Q230.9 -8.32 230.85 -9.01Q230.8 -9.7 230.67 -10.35Q230.54 -11.01 230.26 -11.57Q229.97 -12.13 229.49 -12.48Q229.04 -12.77 228.43 -12.85Q227.82 -12.93 227.2 -12.8Q226.58 -12.67 226.06 -12.37Q225.55 -12.06 225.33 -11.55Q224.72 -10.24 224.7 -8.93Q224.69 -7.62 224.98 -6.24Q225.14 -5.54 225.42 -4.78Q225.71 -4.03 226.32 -3.62Q226.45 -3.52 226.72 -3.47Q226.99 -3.42 227.3 -3.39Q227.6 -3.36 227.87 -3.34Q228.14 -3.33 228.27 -3.36Z M260.83 -17.12 259.1 -15.39Q258.4 -14.72 257.7 -14.08Q256.99 -13.44 256.26 -12.8Q256.19 -12.74 256.13 -12.69Q256.06 -12.64 256 -12.58Q255.39 -12.03 254.8 -11.42Q254.21 -10.82 253.38 -10.56Q252.8 -10.4 252.13 -10.59Q251.46 -10.78 251.1 -11.26Q250.85 -11.65 250.85 -12.03Q250.85 -12.42 250.99 -12.78Q251.14 -13.15 251.36 -13.5Q251.58 -13.86 251.84 -14.14Q252.8 -15.26 253.84 -16.27Q254.88 -17.28 255.97 -18.24Q256.32 -18.53 256.77 -19.02Q257.22 -19.52 257.63 -20Q258.11 -20.58 258.62 -21.15Q258.56 -21.89 258.59 -22.56Q258.62 -23.14 258.75 -23.71Q258.88 -24.29 259.23 -24.64Q259.65 -25.02 260.42 -25.14Q261.18 -25.25 261.7 -25.09Q262.43 -24.86 262.74 -24.32Q263.04 -23.78 263.14 -23.04Q263.17 -22.43 263.15 -22Q263.14 -21.57 263.49 -21.06Q263.74 -20.67 264.08 -20.32Q264.42 -19.97 264.74 -19.62Q265.86 -18.37 266.93 -17.22Q268 -16.06 269.15 -14.85Q269.54 -14.46 269.89 -13.89Q270.24 -13.31 270.38 -12.72Q270.53 -12.13 270.35 -11.6Q270.18 -11.07 269.5 -10.75Q269.02 -10.53 268.58 -10.58Q268.13 -10.62 267.71 -10.83Q267.3 -11.04 266.93 -11.36Q266.56 -11.68 266.27 -12ZM251.58 -4.7Q250.85 -4.74 250.19 -4.91Q249.54 -5.09 249.12 -5.73Q248.77 -6.27 248.78 -6.9Q248.8 -7.52 249.25 -7.97Q249.5 -8.22 249.89 -8.35Q250.27 -8.48 250.62 -8.54Q250.98 -8.61 251.25 -8.61Q251.52 -8.61 251.55 -8.61H269.31Q269.82 -8.64 270.42 -8.61Q271.01 -8.58 271.52 -8.4Q272.03 -8.22 272.38 -7.82Q272.74 -7.42 272.74 -6.72Q272.74 -5.92 272.19 -5.52Q271.65 -5.12 270.9 -4.94Q270.14 -4.77 269.34 -4.75Q268.54 -4.74 268.03 -4.74H266.78Q266.14 -4.7 265.54 -4.72Q264.93 -4.74 264.29 -4.74H263.07Q263.1 -3.84 263.14 -2.85Q263.17 -1.86 263.04 -1.09Q262.98 -0.48 262.74 0.08Q262.5 0.64 261.95 0.99Q261.47 1.31 260.83 1.33Q260.19 1.34 259.68 1.06Q259.26 0.8 259.06 0.32Q258.85 -0.16 258.78 -0.61Q258.72 -0.96 258.74 -1.38Q258.75 -1.79 258.75 -2.14Q258.72 -2.72 258.72 -3.41Q258.72 -4.1 258.72 -4.77H257.92Q257.02 -4.77 256.26 -4.75Q255.49 -4.74 254.75 -4.72Q254.02 -4.7 253.25 -4.7Q252.48 -4.7 251.58 -4.7Z" transform="translate(463.34 217.24)" fill="#E9D5FF"/></g>
+  </g>
+</svg>
